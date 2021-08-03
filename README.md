@@ -6,11 +6,11 @@ Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por un
 
 ## Imágenes
 
-![[Screenshot1.png]]
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot1.png)
 
-![[Screenshot2.png]]
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot2.png)
 
-![[Screenshot3.png]]
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot3.png)
 
 ## Plugin que se ven afectados
 
