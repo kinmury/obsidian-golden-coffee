@@ -1,10 +1,12 @@
 # ***Golden Coffee***
 
-## Introducción
+## Introduction
 
 Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por una única razón: *No uso el modo claro ( -_-), ¿quien en su sano juicio lo haría? (es broma, simplemente me parece más cómodo que sea oscuro, nada más)*
 
-## Imágenes
+Welcome to "Golden Coffee Theme". This theme only have a dark version. The reason for that is: *I dont use light mode ( -_-), ¿who use it anyway? (Im just kidding, I just find dark mode more comfy that light mode, nothing more (please dont kill me, Im just joking))* 
+
+## Screenshots
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot1.png)
 
@@ -12,17 +14,17 @@ Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por un
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot3.png)
 
-## Plugin que se ven afectados
+## Plugin that are affected
 
 - *Calendar Plugin*
 - *Sliding Panes*
 
-## Instalación
+## Instalation
 
-1. **Descargar el archivo "GoldenCoffeeTheme.css"** - Ya sea utilizando Git o simplemente pulsando el botón verde de *"Code/Código"*, el cual te despliega otro menú en el que eliges la opción *"Download ZIP/Descargar ZIP"*.
-2. **Mover el tema a la carpeta "(NombreDeTuBoveda)/.obsidian/theme"** - Tras descargar el archivo, lo debes copiar en la carpeta *theme* que está dentro de la carpeta "oculta" *.obsidian* dentro de tu bóveda.
-3. **Escoger el tema dentro de Obsidian** - Una vez que lo hayas copiado en la carpeta *theme*, entras en las opciones de Obsidian de la bóveda designada y escoges el tema *"GoldenCoffeeTheme"*.
+1. **Download the file "GoldenCoffeeTheme.css** - You can "clone" using git, or you can just simply press the green button "Code", and then press "Download ZIP".
+2. **Move the theme to the folder "(YourVaultName)/.obsidian/theme"** - When you have the theme downloaded, you need to copy it on the "theme" folder, for it to appear on your Obsidian Vault.
+3. **Choose the theme on Obsidian Settings** - Once your done with the previous steps, you just need to choose the theme "GoldenCoffeeTheme" on your Obsidian Setting.
 
 ## Feedback
 
-Si encuentras algún error o algún problema cualquiera, o simplemente una sugerencia, no dudes en comentarlo.
+If by any change you see an error or something that doesnt feel right, just hit me up ;D.
