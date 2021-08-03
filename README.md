@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por una única razón: *No uso el modo claro ( -_-), ¿quien en su sano juicio lo haría? (es broma, simplemente me parece más cómo que sea oscuro, nada más)*
+Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por una única razón: *No uso el modo claro ( -_-), ¿quien en su sano juicio lo haría? (es broma, simplemente me parece más cómodo que sea oscuro, nada más)*
 
 ## Imágenes
 
