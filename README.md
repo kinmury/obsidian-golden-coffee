@@ -14,7 +14,7 @@ Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por un
 
 ## Plugin que se ven afectados
 
-- *Calendar Plugin* - Se han agregado algunos cambios al plugin que no afectan a su funcionamiento, sino a su apariencia (obviamente).
+- *Calendar Plugin*
 - *Sliding Panes*
 
 ## Instalación
