@@ -40,6 +40,10 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot3.png)
 
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot4.png)
+
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot5.png)
+
 ## Plugins that are affected
 
 - *Calendar Plugin*
