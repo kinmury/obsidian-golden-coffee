@@ -16,6 +16,7 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 - *Calendar Plugin*
 - *Sliding Panes*
+- *Kanban*
 
 ## Instalation
 
