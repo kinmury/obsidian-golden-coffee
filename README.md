@@ -2,8 +2,6 @@
 
 ## Introduction
 
-Bienvenidos al tema "Golden Coffee". Este tema solo tiene versión Oscura por una única razón: *No uso el modo claro ( -_-), ¿quien en su sano juicio lo haría? (es broma, simplemente me parece más cómodo que sea oscuro, nada más)*
-
 Welcome to "Golden Coffee Theme". This theme only have a dark version. The reason for that is: *I dont use light mode ( -_-), ¿who use it anyway? (Im just kidding, I just find dark mode more comfy that light mode, nothing more (please dont kill me, Im just joking))* 
 
 ## Screenshots
