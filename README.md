@@ -4,6 +4,34 @@
 
 Welcome to "Golden Coffee Theme". This theme only have a dark version. The reason for that is: *I dont use light mode ( -_-), ¿who use it anyway? (Im just kidding, I just find dark mode more comfy that light mode, nothing more (please dont kill me, Im just joking))* 
 
+> ## Update <04/08/2021>
+>
+> ### Sliding Pane Color
+>
+> - Adapted the Pane to the Theme Color Scheme
+>
+> ### Vault name
+>
+> - Now its centered, bold and italic
+>
+> ### UL and OL
+>
+> - They have a line below them when another ol or ul comes within the original one. 
+> - When you put and ol within another ol, the "list-style-type" will change between decimal, latin and roman.
+>
+> ### Kanban
+>
+> - Adaptation to the theme color scheme and a few fixes.
+>
+> ### Iframe
+> 
+> - Now has a cool border.
+>
+> ### Invisibility
+>
+> - Some things from the sliding pane whill become invisible when you dont hover over them.
+
+
 ## Screenshots
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot1.png)
@@ -12,7 +40,7 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot3.png)
 
-## Plugin that are affected
+## Plugins that are affected
 
 - *Calendar Plugin*
 - *Sliding Panes*

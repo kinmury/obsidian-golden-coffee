@@ -289,7 +289,7 @@ ul > li {
 }
 
 ol > li::marker {
-    color:#FFFAEb  !important;
+    color:#FFFAEB  !important;
 }
 
 ul > li::marker {
@@ -460,6 +460,7 @@ ul > li::marker {
     color:white !important;
     text-shadow: 2px 2px black;
     background-color: #8383834F !important;
+    font-weight: bold !important;
 }
 
 .cm-s-obsidian span.cm-formatting-list {
@@ -532,6 +533,189 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     display: inline-block;
     color: #FF7700 !important;
 }
+
+/*----- <Sliding pane color> -----*/
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
+    background: transparent !important;
+}
+
+body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
+    border: 0 !important;
+    background: linear-gradient(to top, #191715, #3d2607);
+}
+
+.workspace-leaf.mod-active .view-header {
+    border: none;
+    background: linear-gradient(to left, #191715, #3d2607);
+}
+
+.workspace-leaf.mod-active .view-header-title-container:after {
+    background: transparent !important;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
+    background: transparent !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:after {
+    background: transparent !important;
+}
+
+/*----- </Sliding pane color> -----*/
+
+
+/*----- <Vault Name> -----*/
+.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+    /*padding-left: 10px;*/
+    font-size: 20px;
+    font-style: italic;
+    color: #ece7d8 !important;
+    cursor: default;
+    display: block;
+    text-align: center;
+}
+
+/*----- </Vault Name> -----*/
+
+
+/*----- <Line below list item> -----*/
+ul ul, ul ol {
+    position: relative;
+}
+
+ul ul::before, ul ol::before {
+    content: '';
+    border-left: 1px solid var(--background-modifier-border);
+    position: absolute;
+}
+
+ul ul::before, ul ol::before {
+    left: -17px;
+    top: 0;
+    bottom: 0;
+}
+
+ol ol, ol ul {
+    position: relative;
+}
+
+ol ol::before, ol ul::before {
+    content: '';
+    border-left: 1px solid var(--background-modifier-border);
+    position: absolute;
+}
+
+ol ol::before, ol ul::before {
+    left: -10px;
+    top: 0;
+    bottom: 0;
+}
+
+ul .task-list-item ul::before {
+    left: -14px !important
+}
+
+ul {
+    padding-inline-start: 45px !important;
+}
+
+/*----- </Line below list item> -----*/
+
+
+
+/*----- <Nested List Items> -----*/
+
+ol, ol ol ol ol { 
+    list-style-type: decimal; 
+}
+
+ol ol, ol ol ol ol ol {
+    list-style-type: upper-latin;
+}
+
+ol ol ol, ol ol ol ol ol ol {
+    list-style-type: upper-roman;
+} 
+
+
+
+ul ol ul ol, ul ol ul ol ol ol ol{
+    list-style-type: decimal;
+}
+
+ul ol ul ol ol, ul ol ul ol ol ol ol ol { 
+    list-style-type: upper-latin;
+}
+
+ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol { 
+    list-style-type: upper-roman;
+}
+
+/*----- </Nested List Items> -----*/
+
+
+/*----- <Kanban> -----*/
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
+    background: transparent !important;
+}
+
+.kanban-plugin__markdown-preview-view p {
+    overflow-x: visible !important;
+    white-space:normal !important;
+    /*overflow-wrap: break-word;*/
+}
+
+.kanban-plugin__lane-title {
+    padding-top: 25px !important ;
+    font-weight: 0 !important;
+    font-size: .875rem;
+    flex-grow: 1 !important;
+    width: 100%;
+
+    text-decoration: underline !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+.kanban-plugin__item button:hover, .kanban-plugin__lane button:hover, .kanban-plugin button:hover {
+    background-color: #ECE2D8 !important;
+    color: #845c28 !important;
+    font-weight: bold !important;
+}
+
+.kanban-plugin__autocomplete-item:hover, .kanban-plugin__autocomplete-item-active {
+    background-color: #ECE2D8 !important;
+    color: #845c28 !important;
+    font-weight: bold !important;
+}
+
+/*----- </Kanban> -----*/
+
+/*----- <Iframe> -----*/
+
+iframe {
+    border-width: 5px;
+    border-color: initial;
+    border-image: initial;
+    border-style: double;
+}
+
+/*----- </Iframe> -----*/
+
+/*----- <Invisibility> -----*/
+.view-header:not(:hover) .view-actions {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon:not(:hover) {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+/*----- </Invisibility> -----*/
 
 /*-------------------------------------------------------------------------------------------*/
 /*----------------------</ Elementos del autor agregados al tema base >----------------------*/
