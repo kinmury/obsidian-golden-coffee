@@ -484,11 +484,6 @@ ul > li::marker {
     border-color: #EBBC70;
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
-    border-right: 2px solid #D3BC8E !important;
-    border-bottom: none;
-}
-
 .theme-dark code[class*="language-"], .theme-dark pre[class*="language-"] {
     text-shadow: none !important;
     background-color: #372611 !important;
@@ -534,10 +529,57 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: #FF7700 !important;
 }
 
+/* (04/08/2021) - 2*/
+
+/*----- <Titlebar> -----*/
+
+.titlebar {
+    border: 0 !important;
+    background: #000000;
+}
+
+.titlebar-inner {
+    -webkit-app-region: drag;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+}
+
+/*----- </Titlebar> -----*/
+
+.workspace-ribbon.mod-left {
+    border: none !important;
+    background: linear-gradient(to top, #191715, #3d2607);
+}
+
+.workspace-ribbon.mod-right {
+    background: linear-gradient(to top, #191715, #141211, #000000);
+}
+
+/* (04/08/2021) - 2*/
+
 /*----- <Sliding pane color> -----*/
 
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
+    border-right: 2px solid #D3BC8E !important;
+    border-bottom: none;
+}
+
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
+    background: transparent !important;   
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:after {
     background: transparent !important;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
+    background: transparent !important; 
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-content {
+    border: 0 !important;
 }
 
 body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
@@ -550,24 +592,68 @@ body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
     background: linear-gradient(to left, #191715, #3d2607);
 }
 
-.workspace-leaf.mod-active .view-header-title-container:after {
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
+    box-shadow: none !important;   
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    top: 0;
+    bottom: unset;
     background: transparent !important;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:after {
+    width: 100%;
+    height: 15px;
+    top: unset;
+    bottom: 0;
     background: transparent !important;
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:after {
-    background: transparent !important;
+.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+    border-radius: 0;
 }
 
 /*----- </Sliding pane color> -----*/
 
+/*----- <Header Title> -----*/
+
+.view-header {
+    background: linear-gradient(to top, #191715, #141211, #000000);
+}
+
+.view-header-title {
+
+    font-size: 17px;
+    font-weight: 600;
+    overflow: auto;
+    padding-right: 20px;
+    white-space: pre;
+    word-wrap: normal;
+    line-height: 32px;
+    color: var(--text-muted);
+}
+
+.view-header-title-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: transparent !important;
+}
+
+/*----- <Header Title> -----*/
 
 /*----- <Vault Name> -----*/
 .nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
-    /*padding-left: 10px;*/
+    padding-left: 0px;
     font-size: 20px;
     font-style: italic;
     color: #ece7d8 !important;
@@ -591,7 +677,7 @@ ul ul::before, ul ol::before {
 }
 
 ul ul::before, ul ol::before {
-    left: -17px;
+    left: -19px;
     top: 0;
     bottom: 0;
 }
@@ -607,13 +693,13 @@ ol ol::before, ol ul::before {
 }
 
 ol ol::before, ol ul::before {
-    left: -10px;
+    left: -12px;
     top: 0;
     bottom: 0;
 }
 
 ul .task-list-item ul::before {
-    left: -14px !important
+    left: -19px !important
 }
 
 ul {
@@ -705,17 +791,30 @@ iframe {
 /*----- </Iframe> -----*/
 
 /*----- <Invisibility> -----*/
-.view-header:not(:hover) .view-actions {
+
+.view-actions a:not(:hover) {
     opacity: 0;
     transition: opacity .25s ease-in-out;
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon:not(:hover) {
+.view-header-icon:not(:hover) {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.titlebar-button.mod-back:not(:hover) {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.titlebar-button.mod-forward:not(:hover) {
     opacity: 0;
     transition: opacity .25s ease-in-out;
 }
 
 /*----- </Invisibility> -----*/
+
+
 
 /*-------------------------------------------------------------------------------------------*/
 /*----------------------</ Elementos del autor agregados al tema base >----------------------*/
