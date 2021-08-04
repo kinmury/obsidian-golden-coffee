@@ -34,7 +34,7 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 ## Screenshots
 
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot1.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/766e0b30bf98918a50b4f95d0811b4ad52e6f109/Screenshots/Screenshot1.png)
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot2.png)
 
