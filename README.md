@@ -47,7 +47,7 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 ## Plugins that are affected
 
 - *Calendar Plugin*
-- *Sliding Panes*
+- *Sliding Panes* <- Actually needed
 - *Kanban*
 
 ## Instalation
