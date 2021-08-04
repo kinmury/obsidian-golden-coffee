@@ -14,7 +14,7 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 >
 > - Now its centered, bold and italic
 >
-> ### UL and OL
+> ### UL and OL - (Optimized Font Size -> 20)
 >
 > - They have a line below them when another ol or ul comes within the original one. 
 > - When you put and ol within another ol, the "list-style-type" will change between decimal, latin and roman.
