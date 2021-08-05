@@ -12,6 +12,13 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 > ### Fixes
 > - _Most of them are just color scheme related_
 > - _Kanban_: The title had the wrong dimensions. I fixed it and customized to the color scheme.
+> ## Admonition
+> - *Text* - Now its centered
+>
+> ## Mermaid
+> - *Sequence Diagram* - Colour fix
+> - *State Diagram* - No matter how big the diagram is, his max width is 700 px. (Also aplied for all diagrams)
+> - *User Journey* - Colour fix
 
 
 ## Showcase
