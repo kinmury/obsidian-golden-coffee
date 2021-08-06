@@ -1724,9 +1724,9 @@ img {
 
     /*----- <Admonition Plugin> -----*/
     .print .admonition > .admonition-content-holder > .admonition-content ul > li::marker{
-        color: black !important;}
+        color: white !important;}
     .print .admonition > .admonition-content-holder > .admonition-content ol > li::marker{
-        color: black !important;}
+        color: white !important;}
     .print .admonition > .admonition-content-holder > .admonition-content ul > li{
         color: #D3BC8E !important;}
     .print .admonition > .admonition-content-holder > .admonition-content ol > li{
