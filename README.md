@@ -4,23 +4,6 @@
 
 Welcome to "Golden Coffee Theme". This theme only have a dark version. The reason for that is: *I dont use light mode ( -_-), ¿who use it anyway? (Im just kidding, I just find dark mode more comfy that light mode, nothing more (please dont kill me, Im just joking))* [PD: *I actually did make the Light Theme*] 
 
-
-> ## Update <05/08/2021>
->
-> ### Light Theme
-> - I finally did it, the Light Theme. Enjoy :D
-> ### Fixes
-> - _Most of them are just color scheme related_
-> - _Kanban_: The title had the wrong dimensions. I fixed it and customized to the color scheme.
-> ## Admonition
-> - *Text* - Now its centered
->
-> ## Mermaid
-> - *Sequence Diagram* - Colour fix
-> - *State Diagram* - No matter how big the diagram is, his max width is 700 px. (Also aplied for all diagrams)
-> - *User Journey* - Colour fix
-
-
 ## Showcase
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase.png)
@@ -47,7 +30,11 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 - ***Sliding Panes***
 - *Kanban*
 
-## Instalation
+## Instalation - Obsidian
+
+*Community Tab* - Go on `Settings>Appearance>"Open Community Themes"` and Search for "Golden Coffee". Once finded, just apply it and *enjoy it :D*.
+
+## Instalation - GitHub
 
 1. **Download the file "GoldenCoffeeTheme.css** - You can "clone" using git, or you can just simply press the green button "Code", and then press "Download ZIP".
 2. **Move the theme to the folder "(YourVaultName)/.obsidian/theme"** - When you have the theme downloaded, you need to copy it on the "theme" folder, for it to appear on your Obsidian Vault.
@@ -58,6 +45,21 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 If by any change you see an error or something that doesnt feel right, just hit me up ;D.
 
 ## Updates
+
+> ## Update <05/08/2021>
+>
+> ### Light Theme
+> - I finally did it, the Light Theme. Enjoy :D
+> ### Fixes
+> - _Most of them are just color scheme related_
+> - _Kanban_: The title had the wrong dimensions. I fixed it and customized to the color scheme.
+> ## Admonition
+> - *Text* - Now its centered
+>
+> ## Mermaid
+> - *Sequence Diagram* - Colour fix
+> - *State Diagram* - No matter how big the diagram is, his max width is 700 px. (Also aplied for all diagrams)
+> - *User Journey* - Colour fix
 
 > ## Update <04/08/2021>
 >
