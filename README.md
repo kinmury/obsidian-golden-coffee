@@ -87,3 +87,10 @@ If by any change you see an error or something that doesnt feel right, just hit 
 > ### Invisibility
 >
 > - Some things from the sliding pane whill become invisible when you dont hover over them.
+
+> ## Update <07/08/2021>
+>
+> **HTML** - Now it gets affected by the Theme Color Scheme.
+>	- Italic
+>	- Highlight
+>	- Bold
