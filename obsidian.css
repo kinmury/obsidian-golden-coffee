@@ -404,7 +404,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*---------------- </Blockquote> ---------------*/
 
 /*----- <Italic> -----*/
-.theme-light .markdown-preview-section em, .theme-light .cm-s-obsidian .cm-em {
+.theme-light .markdown-preview-section em, .theme-light .cm-s-obsidian .cm-em, .theme-light i {
     font-style: italic;
     color: #ceb39a;
     text-shadow: 1px 1px black;
@@ -412,7 +412,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*----- </Italic> -----*/
 
 /*----- <Bold> -----*/
-.theme-light strong, .theme-light .cm-s-obsidian .cm-strong {
+.theme-light strong, .theme-light .cm-s-obsidian .cm-strong, .theme-light b {
     font-weight: 600 !important;
     color: #c0aa96 !important;
     text-shadow: 1px 1px black;
@@ -420,13 +420,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*----- <Bold> -----*/
 
 /*----- <Highlight> -----*/
-.theme-light .cm-s-obsidian span.cm-formatting-highlight, .theme-light  .cm-s-obsidian span.cm-highlight {
-    background-color: #CAA981 !important;
-    color: #201405 !important;
-    font-weight: bold;
-}
-
-.theme-light mark {
+.theme-light .cm-s-obsidian span.cm-formatting-highlight, .theme-light  .cm-s-obsidian span.cm-highlight, .theme-light mark {
     background-color: #CAA981 !important;
     color: #201405 !important;
     font-weight: bold;
@@ -765,14 +759,14 @@ blockquote p {
 /*----- </Blockquote> -----*/
 
 /*----- <Italic> -----*/
-.markdown-preview-section em, .cm-s-obsidian .cm-em {
+.markdown-preview-section em, .cm-s-obsidian .cm-em, .theme-dark i{
     font-style: italic;
     color: #FFEFE0;
 }
 /*----- </Italic> -----*/
 
 /*----- <Bold> -----*/
-strong, .cm-s-obsidian .cm-strong {
+strong, .cm-s-obsidian .cm-strong, .theme-dark b {
     font-weight: 600 !important;
     color: #D9C5B3 !important;
 }
