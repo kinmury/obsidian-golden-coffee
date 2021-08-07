@@ -51,8 +51,8 @@ If by any change you see an error or something that doesnt feel right, just hit 
 > ### Light Theme
 > - I finally did it, the Light Theme. Enjoy :D
 > ### Fixes
-> - _Most of them are just color scheme related_
-> - _Kanban_: The title had the wrong dimensions. I fixed it and customized to the color scheme.
+> - _Most of them are just colour scheme related_
+> - _Kanban_: The title had the wrong dimensions. I fixed it and customized to the colour scheme.
 > ## Admonition
 > - *Text* - Now its centered
 >
@@ -63,9 +63,9 @@ If by any change you see an error or something that doesnt feel right, just hit 
 
 > ## Update <04/08/2021>
 >
-> ### Sliding Pane Color
+> ### Sliding Pane Colour
 >
-> - Adapted the Pane to the Theme Color Scheme
+> - Adapted the Pane to the Theme Colour Scheme
 >
 > ### Vault name
 >
@@ -78,7 +78,7 @@ If by any change you see an error or something that doesnt feel right, just hit 
 >
 > ### Kanban
 >
-> - Adaptation to the theme color scheme and a few fixes.
+> - Adaptation to the theme colour scheme and a few fixes.
 >
 > ### Iframe
 > 
@@ -90,7 +90,7 @@ If by any change you see an error or something that doesnt feel right, just hit 
 
 > ## Update <07/08/2021>
 >
-> **HTML** - Now it gets affected by the Theme Color Scheme.
+> **HTML** - Now it gets affected by the Theme Colour Scheme.
 >	- Italic
 >	- Highlight
 >	- Bold
