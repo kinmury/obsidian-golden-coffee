@@ -62,6 +62,19 @@
 }
 
 /*--------------- <Menu> ---------------*/
+/*----- <Notifications> -----*/
+.theme-light .notice {
+    background-color: var(--interactive-accent);
+    color: #372611 !important;
+    font-weight: bold;
+}
+
+.theme-light .flair.mod-pop {
+    background-color: var(--interactive-accent);
+    color: #372611 !important;
+}
+/*----- </Notifications> -----*/
+
 /*----- <Search Pane> -----*/
 .theme-light .cm-hashtag, .theme-light .search-result-file-matched-text {
     color: black !important;
@@ -243,6 +256,7 @@
 body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
     border: 0 !important;
     background: linear-gradient(to top, var(--gradient-sliding-panes-bottom), var(--gradient-sliding-panes-top));
+    
 }
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
@@ -256,7 +270,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     font-weight: 600;
     text-align: center;
 }
-
 
 .theme-light .workspace-leaf.mod-active .view-header {
     border: none;
@@ -1093,9 +1106,10 @@ td {
 .theme-dark .notice {
     background-color: var(--interactive-accent);
     color: #372611 !important;
+    font-weight: bold;
 }
 
-.flair.mod-pop {
+.theme-dark .flair.mod-pop {
     background-color: var(--interactive-accent);
     color: #372611 !important;
 }
@@ -1664,23 +1678,31 @@ img {
 
 /*-------------- </Admonition - Plugin> --------------*/
 
+/*----- <Tag Meme> -----*/
+.tag[href^="#GoldenCoffee"]{
+    background: linear-gradient(to right, var(--gradient-sliding-panes-bottom), var(--gradient-sliding-panes-top));
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-style: italic;
+    font-weight: bold;
+}
+/*----- </Tag Meme> -----*/
+
 /*--------------- <PDF Print> ---------------*/
 @media print {
-    html,
-    body {
+    html, body {
         padding-top: 0 !important;
         overflow: auto !important;
         height: auto !important;
-    }
-    iframe,
-        .titlebar,
-        .app-container,
-        .progress-bar,
-        .popover,
-        .markdown-embed-link {
-        display: none !important;
-    }
+        /*-webkit-print-color-adjust: exact !important;
+        background-color: #000000 !important;*/}
+
+    iframe, .titlebar,.app-container,.progress-bar,.popover,.markdown-embed-link {
+        display: none !important;}
+    
     body > :not(.print) {display: none !important;}
+
+    div {break-inside: avoid !important;}
 
     /*----- <Headers> -----*/
     .print h1 {color: #ECE2D8 !important;text-shadow: 2px 2px black;}
@@ -1728,17 +1750,35 @@ img {
     /*----- </Admonition Plugin> -----*/
 
     /*----- <Bold> -----*/
-    .print strong, .cm-s-obsidian .cm-strong {text-shadow: 2px 2px black;}
+    .print strong, .cm-s-obsidian .cm-strong {
+        color: #beac9c !important;text-shadow: 1px 1px black;}
     /*----- </Bold> -----*/
+
+    /*----- <Italic> -----*/
+    .print em, i {
+        font-style: italic !important;
+        color: #dfc8b3 !important;
+        text-shadow: 1px 1px black;}
+    /*----- </Italic> -----*/
+
+    /*----- <Links> -----*/
+    .print a {text-shadow: 1px 1px black !important;}
+    /*----- </Links> -----*/
 
     /*----- <Tables> -----*/
     .print .markdown-preview-view table {border: 2px solid #583c19 !important;}
     .print .markdown-preview-view th {
-        border-color: #583c19;border: 1px solid #583c19;
-        color:#583c19 !important;}
-    .print .markdown-preview-view td{
-        border-color: #583c19;border: 1px solid #583c19;}
+        border-color: #583c19;border: 1px solid #583c19;color:#583c19 !important;}
+    .print .markdown-preview-view td{border-color: #583c19;border: 1px solid #583c19;}
     .print thead {border-bottom: 2px solid #583c19 !important;}
     /*----- </Table> -----*/
+
+    /*----- <Code> -----*/
+    .print code {
+        padding: 4px !important; line-height: 1.4em !important;
+        display: block !important; font-size: 0.9em !important;
+        background-color: #372611 !important; color: #EBBC70 !important;
+        break-inside: avoid !important;}
+    /*----- </Code> -----*/
 }
 /*--------------- </PDF Print> ---------------*/
