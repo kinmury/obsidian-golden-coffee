@@ -94,3 +94,16 @@ If by any change you see an error or something that doesnt feel right, just hit 
 >	- Italic
 >	- Highlight
 >	- Bold
+
+> ## Update <08/08/2021>
+>
+>  - **PDF print**
+>	 - Now the Codeblock prints correctly
+>		- It wont cut off
+>		- The colour scheme its applied
+>	 - Italic fixed
+>	 - Links upgraded
+> 	- Tags and Links fixed
+> - **Notifications**
+> 	- Light Theme Notifications fixed
+> 	- Notifications text now is bold
