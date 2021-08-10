@@ -31,7 +31,6 @@
     --editor-font: var(--default-font);
     --header-font-pre: var(--preview-font);
 }
-
 /*----- </Font chosen from the author> -----*/
 
 /**************************** <LIGHT THEME> ****************************/
@@ -57,7 +56,6 @@
     --background-modifier-border:  #f5d9b0;
     /*----- </Graph View> -----*/
 
-    
     --text-highlight-bg: rgba(255, 187, 0, 0.4);
 }
 
@@ -247,10 +245,7 @@
     border: none !important;
     background: linear-gradient(to top, #ECE2D8, #FFFFFF);
 }
-
-
 /*--------------- </Side Bars> ----------------*/
-
 
 /*--------------- <Sliding Panes> --------------*/
 body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
@@ -280,8 +275,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     background: linear-gradient(to top, #ECE2D8, #FFFFFF, #FFFFFF);
     border: none !important;
 }
-
-
 /*--------------- </Sliding Panes> --------------*/
 
 /*----- <Headers 1-6> ------*/
@@ -413,7 +406,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: #000000 !important;
 }
 /*----- </Text color of LI in OL> -----*/
-
 /*---------------- </Blockquote> ---------------*/
 
 /*----- <Italic> -----*/
@@ -475,7 +467,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*----- </Links> -----*/
 
 /*----- <HTML> -----*/
-
 .theme-light .cm-s-obsidian span.cm-tag {
     color: #DBCB00;
     text-shadow: 1px 1px black;
@@ -490,7 +481,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: #00FF66;
     text-shadow: 1px 1px black;
 }
-
 /*----- </HTML> -----*/
 
 /*----- <Scrollbar> -----*/
@@ -539,7 +529,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 .theme-light .cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block {
     color: #9e5f00 !important;
 }
-
 /*--------------- </Code> ---------------*/
 
 /*-------------- <Mermaid> --------------*/
@@ -634,7 +623,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*----- </Color of Marker from List Item> -----*/
 
 /*--------------- <Kanban> ---------------*/
-
 .theme-light .kanban-plugin__lane-title {
     height: 25px;
     border: 2px solid #000000;
@@ -647,11 +635,10 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     text-transform: capitalize !important;
     text-align: center !important;
 }
-
 /*--------------- </Kanban> ---------------*/
 
-/**************************** <DARK THEME> ****************************/
 
+/**************************** <DARK THEME> ****************************/
 .theme-dark {
     --background-primary:          #191715;
     --background-primary-alt:      #191715;
@@ -683,8 +670,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 .graph.view.color-line-highlight {
     color: var(--interactive-accent-rgb) !important;
 }
-
-
 
 /*----- <Vault Title> -----*/
 .nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
@@ -799,54 +784,29 @@ mark {
 
 /*----- <Links> -----*/
 a, .cm-hmd-internal-link, span.cm-hmd-internal-link {
-    color: #DBCB00 !important;
-    text-decoration: none !important;
-}
+    color: #DBCB00 !important; text-decoration: none !important;}
 
 a:hover, .cm-url, .cm-hmd-internal-link:hover {
-    color: #FFF357 !important;
-    text-decoration: none !important;
-}
+    color: #FFF357 !important; text-decoration: none !important;}
 
-.cm-s-obsidian span.cm-formatting-link {
-    color: #DBCB00 !important;
-}
-
-.view-actions a {
-    color: var(--text-normal) !important;
-}
-
-.view-actions a:hover{
-    color: #f0dcb5 !important;
-}
+.cm-s-obsidian span.cm-formatting-link {color: #DBCB00 !important;}
+.view-actions a {color: var(--text-normal) !important;}
+.view-actions a:hover{color: #f0dcb5 !important;}
 /*----- </Links> -----*/
 
-.cm-s-obsidian span.cm-quote {
-    color:#EBBC70;
-}
+.cm-s-obsidian span.cm-quote {color:#EBBC70;}
 
 .cm-s-obsidian span.cm-url:hover, .cm-s-obsidian span.cm-url{
-    font-weight: 600;
-    color: #EBBC70;
-}
+    font-weight: 600;color: #EBBC70;}
 
 .cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link {
-    color: #EBBC70;
-    text-decoration: none;
-}
+    color: #EBBC70;text-decoration: none;}
 
-.cm-s-obsidian span.cm-formatting-list {
-    color: #FFFAEB !important ;
-}
-
-.HyperMD-codeblock-bg {
-    background-color: #372611 !important;
-}
-
-.HyperMD-codeblock {
-    line-height: 1.4em !important;
-    color: #EBBC70 !important;
-}
+.cm-s-obsidian span.cm-formatting-list {color: #FFFAEB !important ;}
+.HyperMD-codeblock-bg {background-color: #372611 !important;}
+.HyperMD-codeblock {line-height: 1.4em !important;color: #EBBC70 !important;}
+.HyperMD-list-line {padding-top: 0 !important;}
+.cm-hashtag, .search-result-file-matched-text {color: white !important;}
 
 .HyperMD-codeblock-begin {
     border-top-left-radius: 4px !important;
@@ -858,28 +818,13 @@ a:hover, .cm-url, .cm-hmd-internal-link:hover {
     border-bottom-right-radius: 4px !important;
 }
 
-.HyperMD-list-line {
-    padding-top: 0 !important;
-}
-
-.cm-hashtag, .search-result-file-matched-text {
-    color: white !important;
-}
-
 /*----- <#, [[]], []()> -----*/
-.cm-s-obsidian span.cm-tag{
-    color:#E1E82E;
-}
+.cm-s-obsidian span.cm-tag{color:#E1E82E;}
 /*----- </#, [[]], []()> -----*/
 
 /*----- <HTML> -----*/
-.cm-s-obsidian span.cm-attribute {
-    color: #00FFA1;
-}
-
-.cm-s-obsidian span.cm-string {
-    color: #00FF66;
-}
+.cm-s-obsidian span.cm-attribute {color: #00FFA1;}
+.cm-s-obsidian span.cm-string {color: #00FF66;}
 /*----- </HTML> -----*/
 
 /*----- <Code> -----*/
@@ -896,16 +841,14 @@ a:hover, .cm-url, .cm-hmd-internal-link:hover {
     color: #EBBC70 !important;
 }
 
-.cm-s-obsidian, .cm-inline-code {
-    -webkit-font-smoothing: auto !important;
-}
+.cm-s-obsidian, .cm-inline-code {-webkit-font-smoothing: auto !important;}
 
 .cm-inline-code {
     color: #EBBC70 !important;
     background-color: #372611 !important;
     padding: 1px !important;
 }
-/*----- <Code> -----*/
+/*----- </Code> -----*/
 
 /*--------------- <PLUGINS> ---------------*/
 /*----- <Calendar Plugin> -----*/
@@ -938,112 +881,144 @@ a:hover, .cm-url, .cm-hmd-internal-link:hover {
 /*----- <Sliding Panes> -----*/
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
     border-right: 2px solid var(--sliding-panes-border-line-in) !important;
-    border-bottom: none;
-}
+    border-bottom: none;}
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
-    background: transparent !important;   
-}
+    background: transparent !important; }
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:after {
-    background: transparent !important;
-}
+    background: transparent !important;}
 
 .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
-    background: transparent !important; 
-}
+    background: transparent !important;}
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-content {
-    border: 0 !important;
-}
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-content {border: 0 !important;}
 
 body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
     border: 0 !important;
-    background: linear-gradient(to top, var(--gradient-sliding-panes-bottom), var(--gradient-sliding-panes-top));
-}
+    background: linear-gradient(to top, var(--gradient-sliding-panes-bottom), var(--gradient-sliding-panes-top));}
 
 .workspace-leaf.mod-active .view-header {
     border: none;
-    background: linear-gradient(to left, #191715, #3d2607);
-}
+    background: linear-gradient(to left, #191715, #3d2607);}
 
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
-    box-shadow: none !important;   
-}
+    box-shadow: none !important;}
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 15px;
-    top: 0;
-    bottom: unset;
-    background: transparent !important;
-}
+    content: ""; position: absolute;
+    width: 100%; height: 15px;
+    top: 0; bottom: unset;
+    background: transparent !important;}
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:after {
-    width: 100%;
-    height: 15px;
-    top: unset;
-    bottom: 0;
-    background: transparent !important;
-}
+    width: 100%; height: 15px;
+    top: unset; bottom: 0;
+    background: transparent !important;}
 
 .workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
 .workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
-    border-radius: 0;
-}
+    border-radius: 0;}
 /*----- </Sliding Panes> -----*/
 
 /*----- <Kanban> -----*/
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
-    background: transparent !important;
-}
+    background: transparent !important;}
 
 .kanban-plugin__markdown-preview-view p {
     overflow-x: visible !important;
     white-space:normal !important;
-    /*overflow-wrap: break-word;*/
-}
+    /*overflow-wrap: break-word;*/}
 
 .kanban-plugin__lane-title {
-
-    height: 25px;
-    border: 2px solid #000000;
+    height: 25px; border: 2px solid #000000;
     background: linear-gradient(to right, #191715, #3d2607) !important;
 
-    font-weight: 0 !important;
-    font-size: .875rem;
-    flex-grow: 1 !important;
-    width: auto;
+    font-weight: 0 !important; font-size: .875rem;
+    flex-grow: 1 !important; width: auto;
 
     text-decoration: underline !important;
     text-transform: capitalize !important;
-    text-align: center !important;
-}
+    text-align: center !important;}
 
 .kanban-plugin__item button:hover, .kanban-plugin__lane button:hover, .kanban-plugin button:hover {
     background-color: #ECE2D8 !important;
     color: #845C28 !important;
-    font-weight: bold !important;
-}
+    font-weight: bold !important;}
 
 .kanban-plugin__item-input-actions button, .kanban-plugin__lane-input-actions button {
     display: block;
     margin-right: 5px;
     color: #845C28 !important;
-    font-weight: bold;
-}
+    font-weight: bold;}
 
 .kanban-plugin__autocomplete-item:hover, .kanban-plugin__autocomplete-item-active {
     background-color: #ECE2D8 !important;
     color: #845C28 !important;
     font-weight: bold !important;
 }
-
 /*----- </Kanban> -----*/
 
+/*----- <Dataview> -----*/
+/*-- <Table Name Field> --*/
+.dataview.table-view-table{
+    text-transform: capitalize;
+}
+/*-- </Table Name Field> --*/
+
+/*-- <Links names> --*/
+.table-view-table td:nth-child(1){
+    text-transform: none !important;
+}
+/*-- </Links names> --*/
+
+.table-view-table > thead > tr > th {
+    font-weight: 900 !important;
+    color: var(--text-accent);
+    border-bottom: 1px solid var(--interactive-accent) !important;
+    background-color: #3d2607;
+    border-left: 1px solid white !important;
+
+    text-align: center !important;
+    /*text-transform: capitalize;*/
+    text-transform: none !important;
+}
+
+.table-view-table > thead > tr > th::first-letter {
+    text-transform: capitalize;
+}
+
+.table-view-table td:nth-child(odd),
+.table-view-table tr:nth-child(even) {
+    text-align: center !important;
+
+    background-color: var(--background-modifier-form-field);
+    border: 0;
+    border-bottom: 1px solid white !important;
+    border-right: 1px dashed white !important;
+}
+
+.table-view-table td:nth-child(even) {
+    border-bottom: 1px solid white !important;
+    border-right: 1px dashed white !important;
+}
+/*-- </Table Name Field> --*/
+/*----- </Dataview> -----*/
+
 /*--------------- </PLUGINS> ---------------*/
+/*----- <Admonition - Plugin> -----*/
+.admonition-title-content {
+    display: flex;
+    justify-content: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    
+}
+
+.admonition-title-markdown::first-letter {
+    text-transform: capitalize !important;
+}
+/*----- </Admonition - Plugin> -----*/
 /*----- <Tables> -----*/
 .cm-s-obsidian .HyperMD-table-row {
     white-space: pre;
@@ -1068,6 +1043,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     border-bottom: none;
     font-weight: 500;
     font-size: var(--large-font-size) !important;
+    /*text-transform: capitalize;*/
 }
 
 .markdown-preview-view td {
@@ -1099,7 +1075,6 @@ td {
 .HyperMD-table-row-0 {
     /* padding-top: 4px !important; */
 }
-
 /*----- </Tables> -----*/
 
 /*----- <Notifications> -----*/
@@ -1123,7 +1098,6 @@ td {
     margin-right: auto !important;
     width: 700px !important;
 }
-
 /*----- </Mermaid Position> -----*/
 
 /*----- <Nodes background> -----*/
@@ -1234,29 +1208,17 @@ td {
 
 /*--------------- <OL | UL> ---------------*/
 /*----- <Text Color of List Item> -----*/
-ol > li {
-    color: #D3BC8E !important;
-}
-
-ul > li {
-    color: #D3BC8E !important;
-}
+ol > li {color: #D3BC8E !important;}
+ul > li {color: #D3BC8E !important;}
 /*----- </Text Color of List Item> -----*/
 
 /*----- <Color of Marker from List Item> -----*/
-ol > li::marker {
-    color:#FFFAEB  !important;
-}
-
-ul > li::marker {
-    color: #FFFAEB !important;
-}
+ol > li::marker {color:#FFFAEB  !important;}
+ul > li::marker {color: #FFFAEB !important;}
 /*----- </Color of Marker from List Item> -----*/
 
 /*----- <Line below list items> -----*/
-ul ul, ul ol {
-    position: relative;
-}
+ul ul, ul ol {position: relative;}
 
 ul ul::before, ul ol::before {
     content: '';
@@ -1270,9 +1232,7 @@ ul ul::before, ul ol::before {
     bottom: 0;
 }
 
-ol ol, ol ul {
-    position: relative;
-}
+ol ol, ol ul {position: relative;}
 
 ol ol::before, ol ul::before {
     content: '';
@@ -1286,39 +1246,17 @@ ol ol::before, ol ul::before {
     bottom: 0;
 }
 
-ul .task-list-item ul::before {
-    left: -14px !important
-}
-
-ul {
-    padding-inline-start: 45px !important;
-}
+ul .task-list-item ul::before {left: -14px !important}
+ul {padding-inline-start: 45px !important;}
 /*----- </Line below list items> -----*/
 
 /*----- <Nested List Items> -----*/
-ol, ol ol ol ol { 
-    list-style-type: decimal; 
-}
-
-ol ol, ol ol ol ol ol {
-    list-style-type: upper-latin;
-}
-
-ol ol ol, ol ol ol ol ol ol {
-    list-style-type: upper-roman;
-} 
-
-ul ol ul ol, ul ol ul ol ol ol ol{
-    list-style-type: decimal;
-}
-
-ul ol ul ol ol, ul ol ul ol ol ol ol ol { 
-    list-style-type: upper-latin;
-}
-
-ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol { 
-    list-style-type: upper-roman;
-}
+ol, ol ol ol ol {list-style-type: decimal; }
+ol ol, ol ol ol ol ol {list-style-type: upper-latin;}
+ol ol ol, ol ol ol ol ol ol {list-style-type: upper-roman;} 
+ul ol ul ol, ul ol ul ol ol ol ol{list-style-type: decimal;}
+ul ol ul ol ol, ul ol ul ol ol ol ol ol {list-style-type: upper-latin;}
+ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {list-style-type: upper-roman;}
 /*----- </Nested List Items> -----*/
 /*--------------- </OL | UL> ---------------*/
 
@@ -1333,15 +1271,11 @@ ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {
 
 /*--------------- <PANES> ---------------*/
 /*----- <Line on Active Pane> -----*/
-.workspace-ribbon.mod-left.is-active {
-    border-right-color: #D3BC8E;
-}
+.workspace-ribbon.mod-left.is-active {border-right-color: #D3BC8E;}
 /*----- </Line on Active Pane> -----*/
 
 /*----- <Line on Inactive Pane> -----*/
-.workspace-ribbon.mod-right.is-collapsed {
-    border-left-color: #D3BC8E;
-}
+.workspace-ribbon.mod-right.is-collapsed {border-left-color: #D3BC8E;}
 /*----- </Line on Inactive Pane> -----*/
 
 /*----- <"<" | ">" On both panes> -----*/
@@ -1356,14 +1290,8 @@ ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {
 /*----- </"<" | ">" On both panes> -----*/
 
 /*----- <Vertical Lanes on both Panes> -----*/
-.workspace-ribbon.mod-left {
-    border: none !important;
-    background: linear-gradient(to top, #191715, #3d2607);
-}
-
-.workspace-ribbon.mod-right {
-    background: linear-gradient(to top, #191715, #141211, #000000);
-}
+.workspace-ribbon.mod-left {border: none !important;background: linear-gradient(to top, #191715, #3d2607);}
+.workspace-ribbon.mod-right {background: linear-gradient(to top, #191715, #141211, #000000);}
 /*----- <Vertical Lanes on both Panes> -----*/
 /*--------------- </PANES> ---------------*/
 
@@ -1395,9 +1323,7 @@ ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {
     text-shadow: 2px 2px black;
 }
 
-.nav-file-title::before {
-    content: "";
-}
+.nav-file-title::before {content: "";}
 
 /*----- <Buttons Nav> -----*/
 .nav-action-button {
@@ -1438,10 +1364,7 @@ ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {
 /*----- </Principal Buttons> -----*/
 
 /*----- <Title Bar> -----*/
-.titlebar {
-    border: 0 !important;
-    background: #000000;
-}
+.titlebar {border: 0 !important;background: #000000;}
 
 .theme-dark .titlebar-inner {
     -webkit-app-region: drag;
@@ -1463,25 +1386,10 @@ iframe {
 /*----- </Iframe> -----*/
 
 /*----- <Invisibility> -----*/
-.view-actions a:not(:hover) {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-}
-
-.view-header-icon:not(:hover) {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-}
-
-.titlebar-button.mod-back:not(:hover) {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-}
-
-.titlebar-button.mod-forward:not(:hover) {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-}
+.view-actions a:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.view-header-icon:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.titlebar-button.mod-back:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.titlebar-button.mod-forward:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
 /*----- </Invisibility> -----*/
 
 .setting-hotkey.mod-active {
@@ -1489,9 +1397,7 @@ iframe {
     color: #845C28 !important;
 }
 
-html, body {
-    font-size: 16px !important;
-}
+html, body {font-size: 16px !important;}
 
 /*----- <IMG Centered> -----*/
 img {
@@ -1510,18 +1416,10 @@ img {
 
 }
 
-.markdown-preview-section h1:hover::after{
-    content: " 🢀";
-}
-
 .cm-header-2, .markdown-preview-section h2 {
     font-weight: 700 !important;
     font-size: 26px !important;
     color: #D9C5B3 !important;
-}
-
-.markdown-preview-section h2:hover::after{
-    content: " 🢀";
 }
 
 .cm-header-3, .markdown-preview-section h3 {
@@ -1530,18 +1428,10 @@ img {
     color: #C4AA8E !important;
 }
 
-.markdown-preview-section h3:hover::after{
-    content: " 🢀";
-}
-
 .cm-header-4, .markdown-preview-section h4 {
     font-weight: 650 !important;
     font-size: 20px !important;
     color: #B08F6B !important;
-}
-
-.markdown-preview-section h4:hover::after{
-    content: " 🢀";
 }
 
 .cm-header-5, .markdown-preview-section h5 {
@@ -1550,19 +1440,18 @@ img {
     color: #9A7549 !important;
 }
 
-.markdown-preview-section h5:hover::after{
-    content: " 🢀";
-}
-
 .cm-header-6, .markdown-preview-section h6 {
     font-weight: 600 !important;
     font-size: 18px !important;
     color: #845c28 !important;
 }
 
-.markdown-preview-section h6:hover::after{
-    content: " 🢀";
-}
+.markdown-preview-section h1:hover::after{content: " 🢀";}
+.markdown-preview-section h2:hover::after{content: " 🢀";}
+.markdown-preview-section h3:hover::after{content: " 🢀";}
+.markdown-preview-section h4:hover::after{content: " 🢀";}
+.markdown-preview-section h5:hover::after{content: " 🢀";}
+.markdown-preview-section h6:hover::after{content: " 🢀";}
 /*----- </Headers 1-6> ------*/
 
 /*----- <Checkbox> -----*/
@@ -1625,9 +1514,7 @@ img {
     color: #9A7549;
 }
 
-.side-dock {
-    border-right: 0 !important;
-}
+.side-dock {border-right: 0 !important;}
 
 .cm-s-obsidian, .markdown-preview-view {
     /* padding-left: 10px !important; */
@@ -1638,14 +1525,12 @@ img {
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-    width: 1px !important;
-    background-color: var(--background-secondary-alt);
+    width: 1px !important; background-color: var(--background-secondary-alt);
 }
 
 /* horizontal resize-handle */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-    height: 1px !important;
-    background-color: var(--background-secondary-alt);
+    height: 1px !important; background-color: var(--background-secondary-alt);
 }
 
 /* Remove vertical split padding */
@@ -1655,9 +1540,7 @@ img {
     padding-right: 0px;
 }
 
-.markdown-embed-title {
-    font-weight: 600 !important;
-}
+.markdown-embed-title {font-weight: 600 !important;}
 
 .markdown-embed {
     padding-left: 10px !important;
@@ -1666,17 +1549,7 @@ img {
     margin-right: 10px !important;
 }
 
-/*-------------- <Admonition - Plugin> --------------*/
 
-.admonition-title-content {
-    display: flex;
-    justify-content: center !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    text-transform: capitalize !important;
-}
-
-/*-------------- </Admonition - Plugin> --------------*/
 
 /*----- <Tag Meme> -----*/
 .tag[href^="#GoldenCoffee"]{
