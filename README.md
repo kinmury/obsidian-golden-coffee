@@ -107,3 +107,10 @@ If by any change you see an error or something that doesnt feel right, just hit 
 > - **Notifications**
 > 	- Light Theme Notifications fixed
 > 	- Notifications text now is bold
+
+> ## Update <10/08/2021>
+> - **Dateview**
+>	 - Column Field is Capitalized
+>	 - Fixed Colour Scheme
+> - **Admonition**
+>	 - Fixed capitalized words - Now it only affects the first word :D 
