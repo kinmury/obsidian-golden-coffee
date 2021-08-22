@@ -114,4 +114,8 @@ If by any change you see an error or something that doesnt feel right, just hit 
 >	 - Column Field is Capitalized
 >	 - Fixed Colour Scheme
 > - **Admonition**
->	 - Fixed capitalized words - Now it only affects the first word :D 
+>	 - Fixed capitalized words - Now it only affects the first word :D<
+
+> ## Update <22/08/2021>
+> - Code Font Changed
+> - Links Colour changes
