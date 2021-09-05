@@ -8,14 +8,10 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot1.png)
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot2.png)
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot3.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot4.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot5.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot6.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot7.png)
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot8.png)
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot9.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot10.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot11.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot12.png)
@@ -119,3 +115,6 @@ If by any change you see an error or something that doesnt feel right, just hit 
 > ## Update <22/08/2021>
 > - Code Font Changed
 > - Links Colour changes
+
+> ## Update <05/09/2021>
+> - ISSUE 1 FIXED - Now it will scroll in sync 
