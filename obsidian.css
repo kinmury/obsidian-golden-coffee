@@ -1267,7 +1267,8 @@ ol > li::marker {color:#FFFAEB  !important;}
 ul > li::marker {color: #FFFAEB !important;}
 /*----- </Color of Marker from List Item> -----*/
 
-/*----- <Line below list items> -----*/
+/*----- <Line below list items> -----*/ /*If this is enabled, will cause a scroll-sync problem*/
+/*
 ul ul, ul ol {position: relative;}
 
 ul ul::before, ul ol::before {
@@ -1284,6 +1285,7 @@ ul ul::before, ul ol::before {
 
 ol ol, ol ul {position: relative;}
 
+
 ol ol::before, ol ul::before {
     content: '';
     border-left: 1px solid var(--background-modifier-border);
@@ -1297,7 +1299,7 @@ ol ol::before, ol ul::before {
 }
 
 ul .task-list-item ul::before {left: -14px !important}
-ul {padding-inline-start: 45px !important;}
+ul {padding-inline-start: 45px !important;}*/
 /*----- </Line below list items> -----*/
 
 /*----- <Nested List Items> -----*/
