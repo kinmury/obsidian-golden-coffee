@@ -1601,8 +1601,6 @@ img {
     margin-right: 10px !important;
 }
 
-
-
 /*----- <Tag Meme> -----*/
 .tag[href^="#GoldenCoffee"]{
     background: linear-gradient(to right, var(--gradient-sliding-panes-bottom), var(--gradient-sliding-panes-top));
@@ -1612,6 +1610,28 @@ img {
     font-weight: bold;
 }
 /*----- </Tag Meme> -----*/
+
+/*----- <Line below Folders/Files> -----*/
+.nav-folder, .nav-file {
+    margin: 0 -3px;
+    margin-right: 0px;
+    border-left: 2px solid #ad7832;
+}
+
+.nav-folder:hover,.nav-file:hover {
+    border-color: var(--accent);
+}
+
+.nav-folder-children {
+    padding-left: 18px;
+}
+
+.nav-file-title,.nav-folder-title {
+    white-space: normal;
+    width: auto;
+    border: 0;
+}
+/*----- </Line below Folders/Files> -----*/
 
 /*--------------- <PDF Print> ---------------*/
 @media print {
