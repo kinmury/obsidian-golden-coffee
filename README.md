@@ -39,7 +39,7 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 ## Feedback
 
-If by any change you see an error or something that doesnt feel right, just hit me up ;D.
+If by any change you see an error or something that doesn't feel right, just hit me up ;D.
 
 ## Updates
 
