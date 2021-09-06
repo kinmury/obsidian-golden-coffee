@@ -118,3 +118,6 @@ If by any change you see an error or something that doesnt feel right, just hit 
 
 > ## Update <05/09/2021>
 > - ISSUE 1 FIXED - Now it will scroll in sync 
+
+> ## Update <06/09/2021>
+> - New feature added - Now there is a line below the folder when you open it
