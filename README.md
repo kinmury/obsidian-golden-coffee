@@ -7,7 +7,6 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 ## Showcase
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase.png)
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot1.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot4.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot5.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot6.png)
@@ -19,6 +18,12 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot14.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot15.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot16.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot18.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot19.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot20.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot21.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot22.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot23.png)
 
 ## Plugins that are recommended
 
@@ -121,3 +126,12 @@ If by any change you see an error or something that doesn't feel right, just hit
 
 > ## Update <06/09/2021>
 > - New feature added - Now there is a line below the folder when you open it
+
+> ## Update <07/09/2021>
+> - **Line below Folders and Files**
+> - **Active Line Background** - Now there is a background color where you are tipping
+> - **Cursor** - Now it different
+> - **Void** - There is a different background when there is no file opened
+> - **Settings** - Fixed some issues and implemented a few things
+> - **CTRL+O/P** - Fixed some issues and cleaned up
+> - **Folder/File hover** - There are different hovers depending on if it's a file or a folder
