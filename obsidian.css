@@ -36,6 +36,7 @@
     --default-font: "Baloo Paaji 2";
     --font-monospace: 'Baloo Paaji 2';
     --tables-font: 'Ubuntu Mono';
+
     --preview-font: var(--default-font);
     --editor-font: var(--default-font);
     --header-font-pre: var(--preview-font);
@@ -68,9 +69,19 @@
     --text-highlight-bg: rgba(255, 187, 0, 0.4);
 }
 
+/*----- <Hader fix> -----*/
+.cm-s-obsidian .cm-header, .cm-s-obsidian .cm-strong, .theme-dark .cm-s-obsidian .cm-em  {
+    font-family: "Baloo Paaji 2" !important;
+}
+/*----- </Hader fix> -----*/
+
 /*----- <Code Font> -----*/
 .cm-s-obsidian .HyperMD-codeblock, .markdown-preview-view code,  .cm-s-obsidian .cm-inline-code {
     font-family: 'IBM Plex Mono' !important;
+}
+
+.cm-s-obsidian span.cm-math, .cm-s-obsidian span.hmd-fold-math-placeholder {
+    font-style: normal !important;
 }
 /*----- </Code Font> -----*/
 
@@ -130,6 +141,10 @@
     text-shadow: 1px 1px black;
     background-color: #f1daac !important;
     font-weight: bold !important;
+}
+.theme-light .suggestion-hotkey {
+    background-color: #d3b37fda;
+    border: 1px solid black;
 }
 /*----- </Ctrl+O | Ctrl+P> -----*/
 /*--------------- </Menu> ---------------*/
@@ -449,6 +464,11 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: #201405 !important;
     font-weight: bold;
 }
+
+.theme-light .cm-s-obsidian span.cm-formatting-highlight{
+    padding-top: 3px !important;
+    padding-bottom: 6px !important;
+}
 /*----- </Highlight> -----*/
 
 /*----- <Links> -----*/
@@ -517,6 +537,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 .theme-light code[class*="language-"], .theme-dark pre[class*="language-"] {
     text-shadow: none !important;
     background-color: rgba(238, 208, 175, 0.714) !important;
+    border-radius: 10px;
 }
 
 .theme-light .HyperMD-codeblock-bg {
@@ -527,6 +548,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     font-size: 0.9em !important;
     background-color: rgb(249 223 195 / 71%) !important;
     color: #372611 !important;
+    border-radius: 7px;
 }
 
 .theme-light :not(pre) > code[class*="language-"], .theme-light pre[class*="language-"] {
@@ -672,7 +694,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     --vim-cursor:                  #F0A535;
     --text-selection:              #5A3B17;
     --collapse-indicator:          #FFFFFF;
-    
+
     /*----- <Sliding Panes - Plugin> -----*/
     --gradient-sliding-panes-bottom:     #191715;
     --gradient-sliding-panes-top:       #3d2607;
@@ -743,8 +765,13 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: #EBBC70 !important;
 }
 
-.CodeMirror-linenumber, .cm-formatting {   
+.CodeMirror-linenumber {   
     font-family: var(--font-monospace) !important;
+    color: #EBBC70 !important;
+}
+
+.cm-formatting{
+    font-family: "IBM Plex Mono" !important;
     color: #EBBC70 !important;
 }
 
@@ -776,7 +803,7 @@ blockquote p {
 /*----- </Blockquote> -----*/
 
 /*----- <Italic> -----*/
-.markdown-preview-section em, .cm-s-obsidian .cm-em, .theme-dark i{
+.theme-dark .markdown-preview-section em, .theme-dark .cm-s-obsidian .cm-em, .theme-dark i{
     font-style: italic;
     color: #FFEFE0;
 }
@@ -790,22 +817,22 @@ strong, .cm-s-obsidian .cm-strong, .theme-dark b {
 /*----- <Bold> -----*/
 
 /*----- <Highlight> -----*/
-.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+.theme-dark .cm-s-obsidian span.cm-formatting-highlight, .theme-dark .cm-s-obsidian span.cm-highlight, .theme-dark mark {
     background-color: #CAA981 !important;
     color: #201405 !important;
 }
 
-mark {
-    background-color: #CAA981 !important;
-    color: #201405 !important;
+.theme-dark .cm-s-obsidian span.cm-formatting-highlight{
+    padding-top: 3px !important;
+    padding-bottom: 6px !important;
 }
 /*----- </Highlight> -----*/
 
 /*----- <Links> -----*/
-a, .cm-hmd-internal-link, span.cm-hmd-internal-link {
+.theme-dark a, .theme-dark .cm-hmd-internal-link, span.cm-hmd-internal-link {
     color: #DBCB00 !important; text-decoration: none !important;}
 
-a:hover, .cm-url, .cm-hmd-internal-link:hover {
+.theme-dark a:hover, .theme-dark .cm-url, .theme-dark .cm-hmd-internal-link:hover {
     color: #FFF357 !important; text-decoration: none !important;}
 
 .cm-s-obsidian span.cm-formatting-link {color: #DBCB00 !important;}
@@ -1507,10 +1534,11 @@ img {
 /*----- </Headers 1-6> ------*/
 
 /*----- <Checkbox> -----*/
+/*
 .empty-state-container:hover {
     background-color: var(--background-secondary-alt);
     border: 5px solid var(--interactive-accent) !important;
-}
+}*/
 
 .markdown-preview-view .task-list-item-checkbox {
     width: 15px;
@@ -1632,6 +1660,146 @@ img {
     border: 0;
 }
 /*----- </Line below Folders/Files> -----*/
+
+/*----- <Active Linea CodeMirror> -----*/
+.theme-dark .CodeMirror-activeline .CodeMirror-linebackground {
+	background-color: #41362c !important;
+}
+
+.theme-light .CodeMirror-activeline .CodeMirror-linebackground {
+	background-color: #ffe2c8b4 !important;
+}
+/*----- </Active Linea CodeMirror> -----*/
+
+/*----- <Cursor> -----*/
+.CodeMirror-cursor {
+	border: none;
+	border-left: 0.2em solid #c09773;
+}
+/*----- </Cursor> -----*/
+
+/*----- <Void> -----*/
+.prompt-instructions {display:none;}
+.empty-state-action{display: none;}
+.empty-state-title{font-size: 0;}
+
+.empty-state-title::after{
+    content: "¯\\_[ '-']_/¯";
+    font-size: 3.5rem;
+}
+/*----- </Void> -----*/
+
+/*--------------- <Settings> ---------------*/
+.vertical-tab-header-group-title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.vertical-tab-nav-item {
+    text-align: center;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    transition: all 0.3s ease;
+}
+
+.setting-item-description {
+    padding-left: 12px;
+    font-style: italic;
+}
+
+.dropdown {
+    border: 2px solid;
+    transition: all 0.3s ease;
+}
+
+.theme-dark .dropdown:hover {
+    background-color: #4d2f00;
+}
+
+.theme-light .dropdown:hover {
+    background-color: #e0ab55;
+}
+
+button {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+}
+
+.checkbox-container:hover {
+    background-color: #f0a535;
+}
+/*--------------- <Settings> ---------------*/
+
+/*----- <File Options in Pane> -----*/
+.theme-dark .menu-item.selected:not(.is-disabled):not(.is-label) {
+    background-color: #4d2f00;
+    border-radius: 8px;
+}
+
+.theme-light .menu-item.selected:not(.is-disabled):not(.is-label) {
+    background-color: #d3ac6c;
+    border-radius: 8px;
+}
+
+.menu-item.selected {
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+/*----- </File Options in Pane> -----*/
+
+/*----- <CTRL+P/O> -----*/
+.suggestion-item.is-selected {
+    transition: all 0.15s ease;
+    border-radius: 8px;
+}
+
+.theme-dark .suggestion-hotkey {
+    background-color: #2c1c03;
+    border: 1px solid;
+}
+/*----- </CTRL+P/O> -----*/
+
+/*----- <CTRL+F> -----*/
+.theme-dark input.document-search-input.mod-no-match, input.document-replace-input.mod-no-match {
+    border-radius: 8px;
+    background-color: #2c1c03;
+    transition: all 0.15s ease;
+}
+
+.theme-dark input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {
+    background-color: #4e350c;
+}
+
+.theme-light input.document-search-input.mod-no-match, input.document-replace-input.mod-no-match {
+    border-radius: 8px;
+    background-color: #d6b278;
+    transition: all 0.15s ease;
+}
+
+.theme-light input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {
+    background-color: #f5be65;
+}
+
+.theme-light .document-search-input, .theme-light input.document-replace-input {
+    border: 1px solid #d3ac6c;
+}
+/*----- </CTRL+F> -----*/
+
+/*----- <NAV-hover> -----*/
+.nav-folder-title{
+    transition: all 0.17s ease;
+    border-top-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
+
+.nav-file-title {
+    border-bottom-right-radius: 25px !important;
+}
+
+.nav-file-title.is-active{
+    border-radius: 0px !important;
+}
+/*----- </NAV-hover> -----*/
 
 /*--------------- <PDF Print> ---------------*/
 @media print {
