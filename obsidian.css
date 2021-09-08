@@ -9,7 +9,7 @@ name: Theme Settings
 id: Golden Coffee
 settings:
     -
-        title: Active Linea CodeMirror
+        title: Active Line CodeMirror
         type: heading
         level: 2
         collapsed: false
@@ -110,7 +110,7 @@ settings:
 }
 
 /*----- <Hader fix> -----*/
-.cm-s-obsidian .cm-header, .cm-s-obsidian .cm-strong, .theme-dark .cm-s-obsidian .cm-em  {
+.cm-s-obsidian .cm-header {
     font-family: "Baloo Paaji 2" !important;
 }
 /*----- </Hader fix> -----*/
