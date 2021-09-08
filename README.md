@@ -4,6 +4,15 @@
 
 Welcome to "Golden Coffee Theme". This theme only have a dark version. The reason for that is: *I dont use light mode ( -_-), ¿who use it anyway? (Im just kidding, I just find dark mode more comfy that light mode, nothing more (please dont kill me, Im just joking))* [PD: *I actually did make the Light Theme*] 
 
+## Style Settings
+
+- **Active Line CodeMirror** - Change the background colour of the active line.
+   - Dark Mode
+   - Light Mode
+ - **Decoration**
+   - Vertical Lines Lists - Shows a vertical line on every list. _WARNING_: This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off.
+   - Header Hover "🢀" - When you hover over a header, a 🢀 will pop out.
+
 ## Showcase
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase.png)
@@ -24,6 +33,10 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot21.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot22.png)
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Screenshot23.png)
+
+## Plugins needed
+
+- **Style Settings**
 
 ## Plugins that are recommended
 
