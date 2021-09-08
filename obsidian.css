@@ -4,6 +4,46 @@
 ** --------------------------------------------------------------------------------
 */
 
+/* @settings
+name: Theme Settings
+id: Golden Coffee
+settings:
+    -
+        title: Active Linea CodeMirror
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        title: Dark Mode
+        description: Active Line in CodeMirror on Dark Mode
+        id: alCM-DM
+        type: class-toggle
+        default: false
+    -
+        title: Light Mode
+        description: Active Line in CodeMirror on Light Mode
+        id: alCM-LM
+        type: class-toggle
+        default: false
+    -
+        title: Decoration
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        title: Vertical Lines - Lists
+        description: Shows vertical lines below the lists items markers. WARNING -> This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off.
+        id: vl-LI
+        type: class-toggle
+        default: false
+    -
+        title: Headers Hover "🢀"
+        description: When you hover over a header, a 🢀 will pop out.
+        id: Hh-f
+        type: class-toggle
+        default: false
+*/
+
 /*----- <Font chosen from the author> -----*/
 @font-face {
     font-family: 'Baloo Paaji 2';
@@ -309,58 +349,22 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 
 /*----- <Headers 1-6> ------*/
 .theme-light .cm-header-1, .theme-light .markdown-preview-section h1 {
-    text-shadow: 2px 2px black;
-}
-
-.theme-light .markdown-preview-section h1:hover::after{
-    content: " 🢀";
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 2px 2px black;}
 
 .theme-light .cm-header-2, .theme-light .markdown-preview-section h2 {
-    text-shadow: 2px 2px black;
-}
-
-.theme-light .markdown-preview-section h2:hover::after{
-    content: " 🢀";
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 2px 2px black;}
 
 .theme-light .cm-header-3, .theme-light .markdown-preview-section h3 {
-    text-shadow: 2px 2px black;
-}
-
-.theme-light .markdown-preview-section h3:hover::after{
-    content: " 🢀";
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 2px 2px black;}
 
 .theme-light .cm-header-4, .theme-light .markdown-preview-section h4 {
-    text-shadow: 2px 2px black;
-}
-
-.theme-light .markdown-preview-section h4:hover::after{
-    content: " 🢀";
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 2px 2px black;}
 
 .theme-light .cm-header-5, .theme-light .markdown-preview-section h5 {
-    text-shadow: 1px 1px black;
-}
-
-.theme-light .markdown-preview-section h5:hover::after{
-    content: " 🢀";
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 1px 1px black;}
 
 .theme-light .cm-header-6, .theme-light .markdown-preview-section h6 {
-    text-shadow: 1px 1px black;
-}
-
-.theme-light .markdown-preview-section h6:hover::after{
-    content: " 🢀";
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 1px 1px black;}
 /*----- </Headers 1-6> ------*/
 
 /*----- <Gutters Background> -----*/
@@ -468,6 +472,11 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 .theme-light .cm-s-obsidian span.cm-formatting-highlight{
     padding-top: 3px !important;
     padding-bottom: 6px !important;
+}
+
+.markdown-preview-view mark {
+    padding-left: 2px;
+    padding-right: 2px;
 }
 /*----- </Highlight> -----*/
 
@@ -1012,6 +1021,19 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 }
 /*-- </Table Name Field> --*/
 
+/*-- <Text> --*/
+.theme-dark .markdown-preview-view pre {
+    text-align: center;
+    font-family: "IBM Plex Mono";
+}
+
+.theme-light .markdown-preview-view pre {
+    background-color: #e9c896;
+    text-align: center;
+    font-family: "IBM Plex Mono";
+}
+/*-- </Text> --*/
+
 /*-- <Links names> --*/
 .table-view-table td:nth-child(1){
     text-transform: none !important;
@@ -1055,7 +1077,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: var(--text-accent);
     border-bottom: 1px solid var(--interactive-accent) !important;
     background-color: rgb(249 223 195 / 71%) !important;
-    border-left: 1px solid black !important;
+    border-left: 1px solid #926c3d !important;
 
     text-align: center !important;
     /*text-transform: capitalize;*/
@@ -1071,13 +1093,13 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     text-align: center !important;
     background-color: var(--background-modifier-form-field);
     border: 0;
-    border-bottom: 1px solid black !important;
-    border-right: 1px dashed black !important;
+    border-bottom: 1px solid #926c3d !important;
+    border-right: 1px dashed #926c3d !important;
 }
 
 .theme-light .table-view-table td:nth-child(even) {
-    border-bottom: 1px solid black !important;
-    border-right: 1px dashed black !important;
+    border-bottom: 1px solid #926c3d !important;
+    border-right: 1px dashed #926c3d !important;
 }
 /*-- </Table Name Field> --*/
 /*----- </Dataview> -----*/
@@ -1104,13 +1126,30 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     font-family: var(--tables-font);
 }
 
-.markdown-preview-view table {
+.theme-dark .markdown-preview-view table {
     margin-left: auto;
     margin-right: auto;
     width: auto;
     border: 2px solid #ECE2D8;
     border-spacing: 0;
     overflow: hidden;
+}
+
+.theme-light .markdown-preview-view table {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    border: 2px solid #583c19;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.theme-light .markdown-preview-view th {
+    border: 1px solid #583c19;
+}
+
+.theme-light .markdown-preview-view td {
+    border: 1px solid #583c19;
 }
 
 .markdown-preview-view th {
@@ -1132,8 +1171,12 @@ th {
     font-weight: 600 !important;
 }
 
-thead {
+.theme-dark thead {
     border-bottom: 2px solid #ECE2D8 !important;
+}
+
+.theme-light thead {
+    border-bottom: 2px solid #583c19 !important;
 }
 
 table {
@@ -1295,38 +1338,38 @@ ul > li::marker {color: #FFFAEB !important;}
 /*----- </Color of Marker from List Item> -----*/
 
 /*----- <Line below list items> -----*/ /*If this is enabled, will cause a scroll-sync problem*/
-/*
-ul ul, ul ol {position: relative;}
 
-ul ul::before, ul ol::before {
+.vl-LI ul ul, .vl-LI ul ol {position: relative;}
+
+.vl-LI ul ul::before, .vl-LI ul ol::before {
     content: '';
     border-left: 1px solid var(--background-modifier-border);
     position: absolute;
 }
 
-ul ul::before, ul ol::before {
+.vl-LI ul ul::before, .vl-LI ul ol::before {
     left: -17px;
     top: 0;
     bottom: 0;
 }
 
-ol ol, ol ul {position: relative;}
+.vl-LI ol ol, .vl-LI ol ul {position: relative;}
 
 
-ol ol::before, ol ul::before {
+.vl-LI ol ol::before, .vl-LI ol ul::before {
     content: '';
     border-left: 1px solid var(--background-modifier-border);
     position: absolute;
 }
 
-ol ol::before, ol ul::before {
+.vl-LI ol ol::before, .vl-LI ol ul::before {
     left: -12px;
     top: 0;
     bottom: 0;
 }
 
-ul .task-list-item ul::before {left: -14px !important}
-ul {padding-inline-start: 45px !important;}*/
+.vl-LI ul .task-list-item ul::before {left: -14px !important}
+.vl-LI ul {padding-inline-start: 45px !important;}
 /*----- </Line below list items> -----*/
 
 /*----- <Nested List Items> -----*/
@@ -1525,21 +1568,15 @@ img {
     color: #845c28 !important;
 }
 
-.markdown-preview-section h1:hover::after{content: " 🢀";}
-.markdown-preview-section h2:hover::after{content: " 🢀";}
-.markdown-preview-section h3:hover::after{content: " 🢀";}
-.markdown-preview-section h4:hover::after{content: " 🢀";}
-.markdown-preview-section h5:hover::after{content: " 🢀";}
-.markdown-preview-section h6:hover::after{content: " 🢀";}
+.Hh-f .markdown-preview-section h1:hover::after{content: " 🢀"; text-shadow: 2px 2px black;}
+.Hh-f .markdown-preview-section h2:hover::after{content: " 🢀"; text-shadow: 2px 2px black;}
+.Hh-f .markdown-preview-section h3:hover::after{content: " 🢀"; text-shadow: 2px 2px black;}
+.Hh-f .markdown-preview-section h4:hover::after{content: " 🢀"; text-shadow: 2px 2px black;}
+.Hh-f .markdown-preview-section h5:hover::after{content: " 🢀"; text-shadow: 2px 2px black;}
+.Hh-f .markdown-preview-section h6:hover::after{content: " 🢀"; text-shadow: 2px 2px black;}
 /*----- </Headers 1-6> ------*/
 
 /*----- <Checkbox> -----*/
-/*
-.empty-state-container:hover {
-    background-color: var(--background-secondary-alt);
-    border: 5px solid var(--interactive-accent) !important;
-}*/
-
 .markdown-preview-view .task-list-item-checkbox {
     width: 15px;
     height: 15px;
@@ -1549,13 +1586,8 @@ img {
     filter: hue-rotate(180deg);
 }
 
-.checkbox-container {
-    background-color: var(--interactive-before);
-}
-
-.checkbox-container:after {
-    background-color: var(--background-secondary-alt);
-}
+.checkbox-container {background-color: var(--interactive-before);}
+.checkbox-container:after {background-color: var(--background-secondary-alt);}
 
 .mod-cta {
     color: var(--background-secondary-alt) !important;
@@ -1567,20 +1599,11 @@ img {
     font-weight: 600 !important;
 }
 
-.CodeMirror-cursor {
-    background-color: var(--vim-cursor) !important;
-    opacity: 60% !important;
-}
+.CodeMirror-cursor {background-color: var(--vim-cursor) !important; opacity: 60% !important;}
 /*----- </Checkbox> -----*/
 
-.workspace-leaf-header-title {
-    font-weight: 600 !important;
-}
-
-.side-dock-title {
-    padding-top: 15px !important;
-    font-size: 20px !important;
-}
+.workspace-leaf-header-title {font-weight: 600 !important;}
+.side-dock-title {padding-top: 15px !important; font-size: 20px !important;}
 
 .side-dock-ribbon-tab:hover, .side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
@@ -1646,13 +1669,8 @@ img {
     border-left: 2px solid #ad7832;
 }
 
-.nav-folder:hover,.nav-file:hover {
-    border-color: var(--accent);
-}
-
-.nav-folder-children {
-    padding-left: 18px;
-}
+.nav-folder:hover,.nav-file:hover {border-color: var(--accent);}
+.nav-folder-children {padding-left: 18px;}
 
 .nav-file-title,.nav-folder-title {
     white-space: normal;
@@ -1662,38 +1680,25 @@ img {
 /*----- </Line below Folders/Files> -----*/
 
 /*----- <Active Linea CodeMirror> -----*/
-.theme-dark .CodeMirror-activeline .CodeMirror-linebackground {
-	background-color: #41362c !important;
-}
-
-.theme-light .CodeMirror-activeline .CodeMirror-linebackground {
-	background-color: #ffe2c8b4 !important;
-}
+.alCM-DM .CodeMirror-activeline .CodeMirror-linebackground {
+	background-color: #41362c !important;}
+.alCM-LM .CodeMirror-activeline .CodeMirror-linebackground {
+	background-color: #ffe2c8b4 !important;}
 /*----- </Active Linea CodeMirror> -----*/
 
 /*----- <Cursor> -----*/
-.CodeMirror-cursor {
-	border: none;
-	border-left: 0.2em solid #c09773;
-}
+.CodeMirror-cursor {border: none; border-left: 0.2em solid #c09773;}
 /*----- </Cursor> -----*/
 
 /*----- <Void> -----*/
 .prompt-instructions {display:none;}
 .empty-state-action{display: none;}
 .empty-state-title{font-size: 0;}
-
-.empty-state-title::after{
-    content: "¯\\_[ '-']_/¯";
-    font-size: 3.5rem;
-}
+.empty-state-title::after{content: "¯\\_[ '-']_/¯"; font-size: 3.5rem;}
 /*----- </Void> -----*/
 
 /*--------------- <Settings> ---------------*/
-.vertical-tab-header-group-title {
-    text-align: center;
-    font-weight: bolder;
-}
+.vertical-tab-header-group-title {text-align: center; font-weight: bolder;}
 
 .vertical-tab-nav-item {
     text-align: center;
@@ -1702,32 +1707,15 @@ img {
     transition: all 0.3s ease;
 }
 
-.setting-item-description {
-    padding-left: 12px;
-    font-style: italic;
-}
+.setting-item-description {padding-left: 12px; font-style: italic;}
 
-.dropdown {
-    border: 2px solid;
-    transition: all 0.3s ease;
-}
+.dropdown {border: 2px solid; transition: all 0.3s ease;}
+.theme-dark .dropdown:hover {background-color: #4d2f00;}
+.theme-light .dropdown:hover {background-color: #e0ab55;}
 
-.theme-dark .dropdown:hover {
-    background-color: #4d2f00;
-}
+button {transition-timing-function: ease-in; transition: 0.3s; }
 
-.theme-light .dropdown:hover {
-    background-color: #e0ab55;
-}
-
-button {
-    transition-timing-function: ease-in;
-    transition: 0.3s;
-}
-
-.checkbox-container:hover {
-    background-color: #f0a535;
-}
+.checkbox-container:hover {background-color: #f0a535;}
 /*--------------- <Settings> ---------------*/
 
 /*----- <File Options in Pane> -----*/
@@ -1801,6 +1789,18 @@ button {
 }
 /*----- </NAV-hover> -----*/
 
+/*----- <HR-CM> -----*/
+.cm-s-obsidian span.cm-hr::after {
+    content: "";
+    position: absolute;
+    background:var(--text-muted);
+    height: 1.6px;
+    width: calc(100% - 2.1rem); 
+    left: 2rem;
+    top: 46%; 
+}
+/*----- </HR-CM> -----*/
+
 /*--------------- <PDF Print> ---------------*/
 @media print {
     html, body {
@@ -1818,12 +1818,12 @@ button {
     div {break-inside: avoid !important;}
 
     /*----- <Headers> -----*/
-    .print h1 {color: #ECE2D8 !important;text-shadow: 2px 2px black;}
-    .print h2 {color: #D9C5B3 !important;text-shadow: 2px 2px black;}
-    .print h3 {color: #C4AA8E !important;text-shadow: 2px 2px black;}
-    .print h4 {color: #B08F6B !important;text-shadow: 2px 2px black;}
-    .print h5 {color: #9A7549 !important;text-shadow: 1px 1px black;}
-    .print h6 {color: #845C28 !important;text-shadow: 1px 1px black;}
+    .print h1 {color: #ECE2D8 !important; text-shadow: 2px 2px black;}
+    .print h2 {color: #D9C5B3 !important; text-shadow: 2px 2px black;}
+    .print h3 {color: #C4AA8E !important; text-shadow: 2px 2px black;}
+    .print h4 {color: #B08F6B !important; text-shadow: 2px 2px black;}
+    .print h5 {color: #9A7549 !important; text-shadow: 1px 1px black;}
+    .print h6 {color: #845C28 !important; text-shadow: 1px 1px black;}
     /*----- </Headers> -----*/
 
     /*----- <Blockquote> -----*/
@@ -1836,7 +1836,7 @@ button {
     .print blockquote h5{text-shadow: 2px 2px black;}
     .print blockquote h6{text-shadow: 2px 2px black;}
     /*----- </Blockquote> -----*/
-
+    
     /*----- <OL | UL> -----*/
     .print li::marker {color: black !important;}
     .print li {color: black !important;}
@@ -1846,9 +1846,9 @@ button {
     .print .markdown-preview-view .mermaid .edgePath .path {stroke: black !important;}
     .print .markdown-preview-view .mermaid .edgePaths defs * {fill: black !important;}
     .print .markdown-preview-view .mermaid .node rect.label-container, ellipse.label-container, polygon.label-container, circle.label-container {
-        fill: #372611 !important;stroke: black !important;}
+        fill: #372611 !important; stroke: black !important;}
     .print .markdown-preview-view .mermaid .node .label {color: white !important;
-       vertical-align: middle !important;text-align: center !important;}
+       vertical-align: middle !important; text-align: center !important;}
     /*----- </Mermaid> -----*/
 
     /*----- <Admonition Plugin> -----*/
@@ -1864,7 +1864,7 @@ button {
 
     /*----- <Bold> -----*/
     .print strong, .cm-s-obsidian .cm-strong {
-        color: #beac9c !important;text-shadow: 1px 1px black;}
+        color: #beac9c !important; text-shadow: 1px 1px black;}
     /*----- </Bold> -----*/
 
     /*----- <Italic> -----*/
@@ -1881,8 +1881,8 @@ button {
     /*----- <Tables> -----*/
     .print .markdown-preview-view table {border: 2px solid #583c19 !important;}
     .print .markdown-preview-view th {
-        border-color: #583c19;border: 1px solid #583c19;color:#583c19 !important;}
-    .print .markdown-preview-view td{border-color: #583c19;border: 1px solid #583c19;}
+        border-color: #583c19; border: 1px solid #583c19; color:#C99B50 !important;}
+    .print .markdown-preview-view td{border-color: #583c19; border: 1px solid #583c19;}
     .print thead {border-bottom: 2px solid #583c19 !important;}
     /*----- </Table> -----*/
 
@@ -1893,5 +1893,29 @@ button {
         background-color: #372611 !important; color: #EBBC70 !important;
         break-inside: avoid !important;}
     /*----- </Code> -----*/
+
+    /*----- <Dataview> -----*/
+    .print .table-view-table td:nth-child(odd), .print .table-view-table tr:nth-child(even) {
+        text-align: center !important;
+        background-color: #d0d0d08a !important;
+        border-left: 1px solid #583c19 !important;
+        border-bottom: 1px solid #583c19 !important;
+    }
+
+    .print .table-view-table td:nth-child(even) {
+        border-bottom: 1px solid #583c19 !important;
+    }
+
+    .print .table-view-table > thead > tr > th {
+        background-color: #9c641ad0 !important;
+        color: #442500 !important;
+    }
+
+    .print .markdown-preview-view pre {
+        background-color: #e9c896;
+        text-align: center;
+        font-family: "IBM Plex Mono";
+    }
+    /*----- </Dataview> -----*/
 }
 /*--------------- </PDF Print> ---------------*/
