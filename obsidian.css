@@ -9,19 +9,18 @@ name: Theme Settings
 id: Golden Coffee
 settings:
     -
-        title: Active Line CodeMirror
+        title: Active Line
         type: heading
+        description: Change the background color of the active line you are typing in CodeMirror
         level: 2
         collapsed: false
     -
         title: Dark Mode
-        description: Active Line in CodeMirror on Dark Mode
         id: alCM-DM
         type: class-toggle
         default: false
     -
         title: Light Mode
-        description: Active Line in CodeMirror on Light Mode
         id: alCM-LM
         type: class-toggle
         default: false
@@ -31,15 +30,27 @@ settings:
         level: 2
         collapsed: false
     -
-        title: Vertical Lines - Lists
-        description: Shows vertical lines below the lists items markers. WARNING -> This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off.
-        id: vl-LI
+        title: Headers Hover "🢀"
+        description: When you hover over a header on preview view a 🢀 will pop out
+        id: Hh-f
         type: class-toggle
         default: false
     -
-        title: Headers Hover "🢀"
-        description: When you hover over a header, a 🢀 will pop out.
-        id: Hh-f
+        title: Vertical Lines - Lists
+        type: heading
+        bold: 
+         - WARNING
+        description: "Shows vertical lines below the lists items markers. WARNING -> This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off"
+        level: 3
+        collapsed: false
+    -
+        title: Dark Mode
+        id: vl-LI-DM
+        type: class-toggle
+        default: false
+    -
+        title: Light Mode
+        id: vl-LI-LM
         type: class-toggle
         default: false
 */
@@ -349,22 +360,22 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 
 /*----- <Headers 1-6> ------*/
 .theme-light .cm-header-1, .theme-light .markdown-preview-section h1 {
-    text-shadow: 2px 2px black;}
+    text-shadow: 1px 2px black;}
 
 .theme-light .cm-header-2, .theme-light .markdown-preview-section h2 {
-    text-shadow: 2px 2px black;}
+    text-shadow: 1px 2px black;}
 
 .theme-light .cm-header-3, .theme-light .markdown-preview-section h3 {
-    text-shadow: 2px 2px black;}
+    text-shadow: 1px 2px black;}
 
 .theme-light .cm-header-4, .theme-light .markdown-preview-section h4 {
-    text-shadow: 2px 2px black;}
+    text-shadow: 1px 2px black;}
 
 .theme-light .cm-header-5, .theme-light .markdown-preview-section h5 {
-    text-shadow: 1px 1px black;}
+    text-shadow: 1px 2px black;}
 
 .theme-light .cm-header-6, .theme-light .markdown-preview-section h6 {
-    text-shadow: 1px 1px black;}
+    text-shadow: 1px 2px black;}
 /*----- </Headers 1-6> ------*/
 
 /*----- <Gutters Background> -----*/
@@ -449,7 +460,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*----- <Italic> -----*/
 .theme-light .markdown-preview-section em, .theme-light .cm-s-obsidian .cm-em, .theme-light i {
     font-style: italic;
-    color: #ceb39a;
+    color: #bd9672;
     text-shadow: 1px 1px black;
 }
 /*----- </Italic> -----*/
@@ -457,7 +468,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*----- <Bold> -----*/
 .theme-light strong, .theme-light .cm-s-obsidian .cm-strong, .theme-light b {
     font-weight: 600 !important;
-    color: #c0aa96 !important;
+    color: #a37f5e !important;
     text-shadow: 1px 1px black;
 }
 /*----- <Bold> -----*/
@@ -849,7 +860,10 @@ strong, .cm-s-obsidian .cm-strong, .theme-dark b {
 .view-actions a:hover{color: #f0dcb5 !important;}
 /*----- </Links> -----*/
 
-.cm-s-obsidian span.cm-quote {color:#EBBC70;}
+/*----- <Text Quote> -----*/
+.theme-dark .cm-s-obsidian span.cm-quote {color:#EBBC70;}
+.theme-light .cm-s-obsidian span.cm-quote {color:#d18c31;}
+/*----- </Text Quote> -----*/
 
 .cm-s-obsidian span.cm-url:hover, .cm-s-obsidian span.cm-url{
     font-weight: 600;color: #EBBC70;}
@@ -1022,12 +1036,12 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*-- </Table Name Field> --*/
 
 /*-- <Text> --*/
-.theme-dark .markdown-preview-view pre {
+.theme-dark .dataview-error {
     text-align: center;
     font-family: "IBM Plex Mono";
 }
 
-.theme-light .markdown-preview-view pre {
+.theme-light .dataview-error {
     background-color: #e9c896;
     text-align: center;
     font-family: "IBM Plex Mono";
@@ -1328,8 +1342,11 @@ td {
 
 /*--------------- <OL | UL> ---------------*/
 /*----- <Text Color of List Item> -----*/
-ol > li {color: #D3BC8E !important;}
-ul > li {color: #D3BC8E !important;}
+.theme-dark ol > li {color: #D3BC8E !important;}
+.theme-light ol > li {color: #ca9935 !important;}
+
+.theme-dark ul > li {color: #D3BC8E !important;}
+.theme-light ul > li {color: #ca9935 !important;}
 /*----- </Text Color of List Item> -----*/
 
 /*----- <Color of Marker from List Item> -----*/
@@ -1339,37 +1356,70 @@ ul > li::marker {color: #FFFAEB !important;}
 
 /*----- <Line below list items> -----*/ /*If this is enabled, will cause a scroll-sync problem*/
 
-.vl-LI ul ul, .vl-LI ul ol {position: relative;}
+.vl-LI-DM ul ul, .vl-LI-DM ul ol {position: relative;}
 
-.vl-LI ul ul::before, .vl-LI ul ol::before {
+.vl-LI-DM ul ul::before, .vl-LI-DM ul ol::before {
     content: '';
     border-left: 1px solid var(--background-modifier-border);
     position: absolute;
 }
 
-.vl-LI ul ul::before, .vl-LI ul ol::before {
+.vl-LI-DM ul ul::before, .vl-LI-DM ul ol::before {
     left: -17px;
     top: 0;
     bottom: 0;
 }
 
-.vl-LI ol ol, .vl-LI ol ul {position: relative;}
+.vl-LI-DM ol ol, .vl-LI-DM ol ul {position: relative;}
 
-
-.vl-LI ol ol::before, .vl-LI ol ul::before {
+.vl-LI-DM ol ol::before, .vl-LI-DM ol ul::before {
     content: '';
     border-left: 1px solid var(--background-modifier-border);
     position: absolute;
 }
 
-.vl-LI ol ol::before, .vl-LI ol ul::before {
+.vl-LI-DM ol ol::before, .vl-LI-DM ol ul::before {
     left: -12px;
     top: 0;
     bottom: 0;
 }
 
-.vl-LI ul .task-list-item ul::before {left: -14px !important}
-.vl-LI ul {padding-inline-start: 45px !important;}
+.vl-LI-DM ul .task-list-item ul::before {left: -14px !important}
+.vl-LI-DM ul {padding-inline-start: 45px !important;}
+
+/*^ Dark Mode --- Light Mode v*/
+
+.vl-LI-LM ul ul, .vl-LI-LM ul ol {position: relative;}
+
+.vl-LI-LM ul ul::before, .vl-LI-LM ul ol::before {
+    content: '';
+    border-left: 1px solid #372611;
+    position: absolute;
+}
+
+.vl-LI-LM ul ul::before, .vl-LI-LM ul ol::before {
+    left: -17px;
+    top: 0;
+    bottom: 0;
+}
+
+.vl-LI-LM ol ol, .vl-LI-LM ol ul {position: relative;}
+
+.vl-LI-LM ol ol::before, .vl-LI-LM ol ul::before {
+    content: '';
+    border-left: 1px solid #372611;
+    position: absolute;
+}
+
+.vl-LI-LM ol ol::before, .vl-LI-LM ol ul::before {
+    left: -12px;
+    top: 0;
+    bottom: 0;
+}
+
+.vl-LI-LM ul .task-list-item ul::before {left: -14px !important}
+.vl-LI-LM ul {padding-inline-start: 45px !important;}
+
 /*----- </Line below list items> -----*/
 
 /*----- <Nested List Items> -----*/
@@ -1380,6 +1430,28 @@ ul ol ul ol, ul ol ul ol ol ol ol{list-style-type: decimal;}
 ul ol ul ol ol, ul ol ul ol ol ol ol ol {list-style-type: upper-latin;}
 ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {list-style-type: upper-roman;}
 /*----- </Nested List Items> -----*/
+
+/*----- <Lines below list items in CM> -----*/
+/*Credits: Shimmering Focus Theme @pseudometa (Discord) aka @chrisgrieser (GitHub)
+https://github.com/chrisgrieser/shimmering-focus/*/
+.cm-hmd-list-indent .cm-tab {
+	position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+	content: "";
+	border-left: 1px solid var(--background-modifier-border);
+	position: absolute;
+	left: 4px;
+	top: -9px;
+	bottom: -9999px;
+}
+
+.cm-s-obsidian .CodeMirror-line:not(.HyperMD-table-2) {
+	position: relative;
+	overflow: hidden;
+}
+/*----- </Lines below list items in CM> -----*/
 /*--------------- </OL | UL> ---------------*/
 
 /*----- <Note Search | Comand Search> -----*/
@@ -1486,15 +1558,33 @@ ul ol ul ol ol ol, ul ol ul ol ol ol ol ol ol {list-style-type: upper-roman;}
 /*----- </Principal Buttons> -----*/
 
 /*----- <Title Bar> -----*/
-.titlebar {border: 0 !important;background: #000000;}
+.titlebar {border: 0 !important; background: #000000;}
 
 .theme-dark .titlebar-inner {
-    -webkit-app-region: drag;
+    -webkit-app-region: drag; 
     color: white;
     font-weight: bold;
     font-style: italic;
     width: 100%;
 }
+
+/*----- <[ '-']> -----*/
+.theme-dark .titlebar-left::after {
+    content: "[ '-']";
+    font-style: normal;
+    padding-left: 2px;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+}
+
+.theme-light .titlebar-left::after {
+    content: "[ '-']";
+    font-style: normal !important;
+    padding-left: 2px;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+}
+/*----- </[ '-']> -----*/
 /*----- </Title Bar> -----*/
 /*--------------- </Title Zone> ---------------*/
 
@@ -1663,13 +1753,13 @@ img {
 /*----- </Tag Meme> -----*/
 
 /*----- <Line below Folders/Files> -----*/
-.nav-folder, .nav-file {
+.nav-folder {
     margin: 0 -3px;
     margin-right: 0px;
     border-left: 2px solid #ad7832;
 }
 
-.nav-folder:hover,.nav-file:hover {border-color: var(--accent);}
+.nav-folder:hover {border-color: var(--accent);}
 .nav-folder-children {padding-left: 18px;}
 
 .nav-file-title,.nav-folder-title {
@@ -1677,6 +1767,20 @@ img {
     width: auto;
     border: 0;
 }
+
+.nav-file-title {
+    margin: 0 -3px;
+    margin-right: 0px;
+    border-left: 2px solid #ad7832;
+}
+
+.nav-file-title.is-active {
+    margin: 0 -3px;
+    margin-right: 0px;
+    border-left: 2px solid white;
+}
+
+.nav-file-title:hover {border-color: var(--accent);}
 /*----- </Line below Folders/Files> -----*/
 
 /*----- <Active Linea CodeMirror> -----*/
@@ -1716,6 +1820,25 @@ img {
 button {transition-timing-function: ease-in; transition: 0.3s; }
 
 .checkbox-container:hover {background-color: #f0a535;}
+
+/*----- <Settings Menu Size> -----*/
+.modal.mod-settings {
+	height: 85%;
+	max-width: unset;
+	width: 85%;
+}
+
+.modal.mod-settings .vertical-tab-content-container {
+	padding-top: 1em;
+	padding-left: 0.5em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	height: 90vh;
+}
+.modal.mod-settings .vertical-tab-header {height: 90vh;}
+.modal.mod-settings .vertical-tab-content-container .vertical-tab-content,
+.modal.mod-settings .vertical-tab-content-container .vertical-tab-header {overflow-y: auto;}
+/*----- </Settings Menu Size> -----*/
 /*--------------- <Settings> ---------------*/
 
 /*----- <File Options in Pane> -----*/
@@ -1754,9 +1877,7 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
     transition: all 0.15s ease;
 }
 
-.theme-dark input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {
-    background-color: #4e350c;
-}
+.theme-dark input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {background-color: #4e350c;}
 
 .theme-light input.document-search-input.mod-no-match, input.document-replace-input.mod-no-match {
     border-radius: 8px;
@@ -1764,13 +1885,10 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
     transition: all 0.15s ease;
 }
 
-.theme-light input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {
-    background-color: #f5be65;
-}
+.theme-light input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {background-color: #f5be65;}
 
 .theme-light .document-search-input, .theme-light input.document-replace-input {
-    border: 1px solid #d3ac6c;
-}
+    border: 1px solid #d3ac6c;}
 /*----- </CTRL+F> -----*/
 
 /*----- <NAV-hover> -----*/
@@ -1864,13 +1982,13 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
 
     /*----- <Bold> -----*/
     .print strong, .cm-s-obsidian .cm-strong {
-        color: #beac9c !important; text-shadow: 1px 1px black;}
+        color: #a37f5e !important; text-shadow: 1px 1px black;}
     /*----- </Bold> -----*/
 
     /*----- <Italic> -----*/
     .print em, i {
         font-style: italic !important;
-        color: #dfc8b3 !important;
+        color: #bd9672 !important;
         text-shadow: 1px 1px black;}
     /*----- </Italic> -----*/
 
@@ -1887,9 +2005,9 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
     /*----- </Table> -----*/
 
     /*----- <Code> -----*/
-    .print code {
+    .print code, .print pre {
         padding: 4px !important; line-height: 1.4em !important;
-        display: block !important; font-size: 0.9em !important;
+        /*display: block !important; font-size: 0.9em !important;*/
         background-color: #372611 !important; color: #EBBC70 !important;
         break-inside: avoid !important;}
     /*----- </Code> -----*/
@@ -1903,19 +2021,23 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
     }
 
     .print .table-view-table td:nth-child(even) {
-        border-bottom: 1px solid #583c19 !important;
-    }
+        border-bottom: 1px solid #583c19 !important;}
 
     .print .table-view-table > thead > tr > th {
         background-color: #9c641ad0 !important;
         color: #442500 !important;
     }
 
-    .print .markdown-preview-view pre {
+    .print .dataview-error {
         background-color: #e9c896;
         text-align: center;
         font-family: "IBM Plex Mono";
     }
     /*----- </Dataview> -----*/
+
+    /*----- <Lines below list items> -----*/
+    .print ol ol::before, .print ol ul::before {border-left: 1px solid #996424;}
+    .print ul ul::before, .print ul ol::before {border-left: 1px solid #996424;}
+    /*----- </Lines below list items> -----*/
 }
 /*--------------- </PDF Print> ---------------*/
