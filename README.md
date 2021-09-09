@@ -6,12 +6,14 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 
 ## Style Settings
 
-- **Active Line CodeMirror** - Change the background colour of the active line.
+- **Active Line CodeMirror** - Change the background colour of the active line you are typing in CodeMirror.
    - Dark Mode
    - Light Mode
  - **Decoration**
-   - Vertical Lines Lists - Shows a vertical line on every list. _WARNING_: This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off.
    - Header Hover "🢀" - When you hover over a header, a 🢀 will pop out.
+   - **Vertical Lines - Lists** - Shows a vertical line on every list. _WARNING_: This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off.
+     - Dark Mode
+     - Light Mode
 
 ## Showcase
 
@@ -148,3 +150,21 @@ If by any change you see an error or something that doesn't feel right, just hit
 > - **Settings** - Fixed some issues and implemented a few things
 > - **CTRL+O/P** - Fixed some issues and cleaned up
 > - **Folder/File hover** - There are different hovers depending on if it's a file or a folder
+
+> ## Update <09/09/2021>
+> - **Light Mode**
+>	 - Colour Scheme fixes
+> - **Settings Menu**
+>	 - Now, its bigger
+> - **Line below Lists**
+> 	 - You can see it on Edit Mode as well. This won't cause any trouble like the ones on Preview View `;)`
+> - **Emoji**
+>	 - A little emoji has come to our little place to make us company `[ '-']`
+> - **Line below Folder/Files - Active File**
+>	 - Changed colour
+> - **Centred pre code**
+>	 - It won't be centered anymore
+> - **PDF Fixes**
+>	 - Some issues are now fixed, some of them were that `this block` displayed incorrectly.
+> - **Style Settings**
+>	 - Added 2 different "line below list items" types, one for "Light Mode" and one for "Dark Mode".
