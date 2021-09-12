@@ -1026,6 +1026,29 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     color: #845C28 !important;
     font-weight: bold !important;
 }
+
+/*--- <Header fix> ---*/
+.kanban-plugin__markdown-preview-view>div>h1 {
+    height: 45px; color: #ECE2D8;}
+.kanban-plugin__markdown-preview-view>div>h2 {
+    height: 36px; color: #D9C5B3;}
+.kanban-plugin__markdown-preview-view>div>h3 {
+    height: 31px; color: #C4AA8E;}
+.kanban-plugin__markdown-preview-view>div>h4 {
+    height: 28px; color: #B08F6B;}
+.kanban-plugin__markdown-preview-view>div>h5 {
+    height: 25px; color: #9A7549;}
+.kanban-plugin__markdown-preview-view>div>h6{
+    height: 25px; color: #845c28;}
+/*--- </Header fix> ---*/
+
+/*--- <Checkbox fix> ---*/
+.kanban-plugin__markdown-preview-view>div>ul > li.task-list-item {height: 27px;}
+/*--- </Checkbox fix> ---*/
+
+/*--- <Italic fix> ---*/
+.kanban-plugin__markdown-preview-view>div>p>em{color: #FFEFE0;}
+/*--- </Italic fix> ---*/
 /*----- </Kanban> -----*/
 
 /*----- <Dataview> -----*/
@@ -1065,6 +1088,8 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     text-align: center !important;
     /*text-transform: capitalize;*/
     text-transform: none !important;
+
+    white-space: pre;
 }
 
 .theme-dark .table-view-table > thead > tr > th::first-letter {
@@ -1078,11 +1103,15 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     border: 0;
     border-bottom: 1px solid white !important;
     border-right: 1px dashed white !important;
+
+    white-space: pre;
 }
 
 .theme-dark .table-view-table td:nth-child(even) {
     border-bottom: 1px solid white !important;
     border-right: 1px dashed white !important;
+
+    white-space: pre;
 }
 
 /*LIGHT THEME*/
@@ -1096,6 +1125,8 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     text-align: center !important;
     /*text-transform: capitalize;*/
     text-transform: none !important;
+    
+    white-space: pre;
 }
 
 .theme-light .table-view-table > thead > tr > th::first-letter {
@@ -1109,11 +1140,15 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
     border: 0;
     border-bottom: 1px solid #926c3d !important;
     border-right: 1px dashed #926c3d !important;
+
+    white-space: pre;
 }
 
 .theme-light .table-view-table td:nth-child(even) {
     border-bottom: 1px solid #926c3d !important;
     border-right: 1px dashed #926c3d !important;
+
+    white-space: pre;
 }
 /*-- </Table Name Field> --*/
 /*----- </Dataview> -----*/
@@ -1384,8 +1419,8 @@ ul > li::marker {color: #FFFAEB !important;}
     bottom: 0;
 }
 
-.vl-LI-DM ul .task-list-item ul::before {left: -14px !important}
-.vl-LI-DM ul {padding-inline-start: 45px !important;}
+.vl-LI-DM ul .task-list-item ul::before {left: -14px;}
+.vl-LI-DM ul {padding-inline-start: 45px;}
 
 /*^ Dark Mode --- Light Mode v*/
 
@@ -1417,8 +1452,8 @@ ul > li::marker {color: #FFFAEB !important;}
     bottom: 0;
 }
 
-.vl-LI-LM ul .task-list-item ul::before {left: -14px !important}
-.vl-LI-LM ul {padding-inline-start: 45px !important;}
+.vl-LI-LM ul .task-list-item ul::before {left: -14px;}
+.vl-LI-LM ul {padding-inline-start: 45px;}
 
 /*----- </Line below list items> -----*/
 
