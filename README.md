@@ -168,3 +168,12 @@ If by any change you see an error or something that doesn't feel right, just hit
 >	 - Some issues are now fixed, some of them were that `this block` displayed incorrectly.
 > - **Style Settings**
 >	 - Added 2 different "line below list items" types, one for "Light Mode" and one for "Dark Mode".
+
+> ## Update <12/09/2021>
+> - **Dataview List Fix**
+>	 - Now, there won't be any more bullet points on the lists in the tables.
+>	 - The text will be displayed without wraping (On the tables)
+> - **Kanban Update**
+>	 - Headers height and color fix
+>	 - Tasks height fix
+>	 - Italics color fix
