@@ -43,9 +43,10 @@ Welcome to "Golden Coffee Theme". This theme only have a dark version. The reaso
 ## Plugins that are recommended
 
 - *Calendar Plugin*
-- ***Sliding Panes***
+- *Sliding Panes*
 - *Kanban*
 - *Dataview*
+- *Admonition*
 
 ## Instalation - Obsidian
 
