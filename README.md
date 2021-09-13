@@ -178,3 +178,12 @@ If by any change you see an error or something that doesn't feel right, just hit
 >	 - Headers height and color fix
 >	 - Tasks height fix
 >	 - Italics color fix
+
+> ## Update <13/09/2021>
+> - **Better Number Active Number**
+>	 - Now, it glows
+> - **Kanban fix** - The previous fix was incorrectly implemented. Now it work properly.
+>	 - Headers height and color fix
+>	 - Tasks height fix
+> - **Admonition**
+>	 - Fix `<HTML>`, the scroll shouldn't be there anymore.
