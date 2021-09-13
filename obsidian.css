@@ -335,11 +335,6 @@ body.plugin-sliding-panes .workspace-leaf.mod-active .view-header {
     
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
-    border-right: 2px solid var(--sliding-panes-border-line-in) !important;
-    border-bottom: none;
-}
-
 .theme-light .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container .view-header-title {
     color: #9A7549 !important;
     font-size: 15px;
@@ -783,6 +778,8 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 .CodeMirror-activeline-gutter > .CodeMirror-linenumber {
     font-weight: 650 !important;
     color: #EBBC70 !important;
+
+    text-shadow: 0 0 5px #EBBC70; 
 }
 
 .CodeMirror-linenumber {   
@@ -948,10 +945,6 @@ strong, .cm-s-obsidian .cm-strong, .theme-dark b {
 /*----- </Calendar Plugin> -----*/
 
 /*----- <Sliding Panes> -----*/
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
-    border-right: 2px solid var(--sliding-panes-border-line-in) !important;
-    border-bottom: none;}
-
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:before {
     background: transparent !important; }
 
@@ -1029,21 +1022,22 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 
 /*--- <Header fix> ---*/
 .kanban-plugin__markdown-preview-view>div>h1 {
-    height: 45px; color: #ECE2D8;}
+    white-space: pre-wrap; padding-bottom: 3px;color: #ECE2D8;}
 .kanban-plugin__markdown-preview-view>div>h2 {
-    height: 36px; color: #D9C5B3;}
+    white-space: pre-wrap; padding-bottom: 3px; color: #D9C5B3;}
 .kanban-plugin__markdown-preview-view>div>h3 {
-    height: 31px; color: #C4AA8E;}
+    white-space: pre-wrap; padding-bottom: 3px; color: #C4AA8E;}
 .kanban-plugin__markdown-preview-view>div>h4 {
-    height: 28px; color: #B08F6B;}
+    white-space: pre-wrap; padding-bottom: 3px; color: #B08F6B;}
 .kanban-plugin__markdown-preview-view>div>h5 {
-    height: 25px; color: #9A7549;}
+    white-space: pre-wrap; padding-bottom: 3px; color: #9A7549;}
 .kanban-plugin__markdown-preview-view>div>h6{
-    height: 25px; color: #845c28;}
+    white-space: pre-wrap; padding-bottom: 3px; color: #845c28;}
 /*--- </Header fix> ---*/
 
 /*--- <Checkbox fix> ---*/
-.kanban-plugin__markdown-preview-view>div>ul > li.task-list-item {height: 27px;}
+.kanban-plugin__markdown-preview-view>div>ul > li.task-list-item {
+    white-space: pre-wrap; padding-bottom: 3px;}
 /*--- </Checkbox fix> ---*/
 
 /*--- <Italic fix> ---*/
@@ -1156,16 +1150,13 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 /*--------------- </PLUGINS> ---------------*/
 /*----- <Admonition - Plugin> -----*/
 .admonition-title-content {
-    display: flex;
-    justify-content: center !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    
+    display: flex; justify-content: center !important;
+    margin-top: 0 !important; margin-bottom: 0 !important;
 }
 
-.admonition-title-markdown::first-letter {
-    text-transform: capitalize !important;
-}
+.admonition-title-markdown::first-letter {text-transform: capitalize !important;}
+
+.admonition center {white-space: pre-wrap; padding-bottom: 2px;}
 /*----- </Admonition - Plugin> -----*/
 /*----- <Tables> -----*/
 .cm-s-obsidian .HyperMD-table-row {
@@ -1237,8 +1228,8 @@ table {
   
 td {
     overflow: hidden;
-    /*white-space: nowrap;*/
     text-overflow: ellipsis;
+    white-space:pre-wrap;
 }
 
 .HyperMD-table-row-0 {
