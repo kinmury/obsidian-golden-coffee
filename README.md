@@ -187,3 +187,7 @@ If by any change you see an error or something that doesn't feel right, just hit
 >	 - Tasks height fix
 > - **Admonition**
 >	 - Fix `<HTML>`, the scroll shouldn't be there anymore.
+
+> ## Update <15/09/2021>
+> - **Setting Panel**
+>   - The setting menu had some issues that now are fixed, like not showing properly all the information and options
