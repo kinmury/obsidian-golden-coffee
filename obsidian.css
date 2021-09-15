@@ -1855,11 +1855,11 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
 }
 
 .modal.mod-settings .vertical-tab-content-container {
-	padding-top: 1em;
+	padding-top: 2em;
 	padding-left: 0.5em;
 	padding-right: 1em;
 	padding-bottom: 1em;
-	height: 90vh;
+	height: 85vh;
 }
 .modal.mod-settings .vertical-tab-header {height: 90vh;}
 .modal.mod-settings .vertical-tab-content-container .vertical-tab-content,
@@ -2004,6 +2004,8 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
         color: #D3BC8E !important;}
     .print .admonition > .admonition-content-holder > .admonition-content ol > li{
         color: #D3BC8E !important;}
+
+    /*.print .admonition {break-inside: auto !important;}*/
     /*----- </Admonition Plugin> -----*/
 
     /*----- <Bold> -----*/
