@@ -191,3 +191,9 @@ If by any change you see an error or something that doesn't feel right, just hit
 > ## Update <15/09/2021>
 > - **Setting Panel**
 >   - The setting menu had some issues that now are fixed, like not showing properly all the information and options
+
+> ## Update <18/09/2021>
+> - **Embeded Notes**
+>	- *No More Scrolling :)*
+> - **PDF Update**
+>	- Just some minor fixes not worthy of mentioning
