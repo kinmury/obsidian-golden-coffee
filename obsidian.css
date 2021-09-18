@@ -1156,7 +1156,13 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 
 .admonition-title-markdown::first-letter {text-transform: capitalize !important;}
 
-.admonition center {white-space: pre-wrap; padding-bottom: 2px;}
+.admonition center {
+    white-space: pre-wrap; 
+    
+    padding-bottom: 2px; 
+    padding-left: 2px; 
+    padding-right: 2px;
+} 
 /*----- </Admonition - Plugin> -----*/
 /*----- <Tables> -----*/
 .cm-s-obsidian .HyperMD-table-row {
@@ -1945,6 +1951,16 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
 }
 /*----- </HR-CM> -----*/
 
+/*----- <No Embeded Titles> ------*/
+.markdown-embed-title {display: none;}
+
+/*-- <No More Scrolling> ---*/
+.markdown-preview-view .markdown-embed-content,
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view { 
+  max-height: unset;
+}
+/*----- </No Embeded Titles> ------*/
+
 /*--------------- <PDF Print> ---------------*/
 @media print {
     html, body {
@@ -1984,6 +2000,8 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
     /*----- <OL | UL> -----*/
     .print li::marker {color: black !important;}
     .print li {color: black !important;}
+    .print ul > li {color: black !important;}
+    .print ol > li {color: black !important;}
     /*----- </OL | UL> -----*/
 
     /*----- <Mermaid> -----*/
