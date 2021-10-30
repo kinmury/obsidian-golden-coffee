@@ -13,7 +13,7 @@ settings:
         type: heading
         description: Change the background color of the active line you are typing in CodeMirror
         level: 2
-        collapsed: false
+        collapsed: true
     -
         title: Dark Mode
         id: alCM-DM
@@ -28,7 +28,7 @@ settings:
         title: Decoration
         type: heading
         level: 2
-        collapsed: false
+        collapsed: true
     -
         title: Headers Hover "🢀"
         description: When you hover over a header on preview view a 🢀 will pop out
@@ -42,7 +42,7 @@ settings:
          - WARNING
         description: "Shows vertical lines below the lists items markers. WARNING -> This could be a problem for those who use sync panes, since it will glitch a lot whenever you try to scroll near the lists. If you use sync panes, please keep it off"
         level: 3
-        collapsed: false
+        collapsed: true
     -
         title: Dark Mode
         id: vl-LI-DM
@@ -53,6 +53,20 @@ settings:
         id: vl-LI-LM
         type: class-toggle
         default: false
+    -
+        id: Heading7
+        title: View Header
+        description: Change the CSS Settings applied to the "View Header"
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: vhhi
+        title: Hidden Icons
+        description: Change the hidden state of the View Header Icons
+        type: class-toggle
+        default: true
+    -
 */
 
 /*----- <Font chosen from the author> -----*/
@@ -1630,10 +1644,10 @@ iframe {
 /*----- </Iframe> -----*/
 
 /*----- <Invisibility> -----*/
-.view-actions a:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
-.view-header-icon:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
-.titlebar-button.mod-back:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
-.titlebar-button.mod-forward:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.vhhi .view-actions a:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.vhhi .view-header-icon:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.vhhi .titlebar-button.mod-back:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
+.vhhi .titlebar-button.mod-forward:not(:hover) {opacity: 0;transition: opacity .25s ease-in-out;}
 /*----- </Invisibility> -----*/
 
 .setting-hotkey.mod-active {
@@ -1855,6 +1869,20 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
 
 /*----- <Settings Menu Size> -----*/
 .modal.mod-settings {
+    max-width: 2000px;
+    width: 86vw;
+    height: 84vh;
+}
+
+.modal.mod-settings .vertical-tab-header {
+    height: 84vh;
+}
+
+.modal.mod-settings .vertical-tab-content-container {
+    height: 84vh;
+}
+
+/*.modal.mod-settings {
 	height: 85%;
 	max-width: unset;
 	width: 85%;
@@ -1869,7 +1897,7 @@ button {transition-timing-function: ease-in; transition: 0.3s; }
 }
 .modal.mod-settings .vertical-tab-header {height: 90vh;}
 .modal.mod-settings .vertical-tab-content-container .vertical-tab-content,
-.modal.mod-settings .vertical-tab-content-container .vertical-tab-header {overflow-y: auto;}
+.modal.mod-settings .vertical-tab-content-container .vertical-tab-header {overflow-y: auto;}*/
 /*----- </Settings Menu Size> -----*/
 /*--------------- <Settings> ---------------*/
 
