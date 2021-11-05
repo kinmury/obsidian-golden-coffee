@@ -694,7 +694,7 @@ div .cm-header-5 ~ .cm-templater-command {font-size: calc(var(--editor-font-size
 div .cm-header-6 ~ .cm-templater-command {font-size: var(--editor-font-size);}
 
 /*───── <HTML Fix> ─────*/
-div .cm-header-1 ~ .cm-tag, div .cm-header-1 ~ .cm-overlay {
+/*div .cm-header-1 ~ .cm-tag, div .cm-header-1 ~ .cm-overlay {
     font-size: calc(var(--editor-font-size) + 7px);}
 div .cm-header-2 ~ .cm-tag, div .cm-header-2 ~ .cm-overlay {
     font-size: calc(var(--editor-font-size) + 4px);}
@@ -706,6 +706,8 @@ div .cm-header-5 ~ .cm-tag, div .cm-header-5 ~ .cm-overlay {
     font-size: calc(var(--editor-font-size) + 1px);}
 div .cm-header-6 ~ .cm-tag, div .cm-header-6 ~ .cm-overlay  {
     font-size: var(--editor-font-size);}
+*/
+
 
 /*───── <LaTeX Fix> ─────*/
 .cm-header-1 ~ .cm-math {font-size: calc(var(--editor-font-size) + 7px);}
