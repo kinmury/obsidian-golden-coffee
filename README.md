@@ -11,6 +11,8 @@
 <h2 align=center>Style Settings</h2>
 
 - **Vault Name on the Top** - Hide the Vault Name of your vault on the top of the app
+- **Background**
+   - *Pattern* - Turn it off if you don't want the new background pattern
 - **Heading**
    - *Get the \#'s back instead of the Hn's* - Turn it off for you to have your \#'s back
    - *Don't center the headings* - Turn it off if you don't want to center your headings on preview view
