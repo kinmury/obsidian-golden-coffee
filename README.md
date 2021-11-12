@@ -6,7 +6,7 @@
 ## Showcase
 
 ![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase.png)
-![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase_2.png)
+![](https://github.com/kinmury/GoldenCoffeeTheme/blob/main/Screenshots/Showcase2.png)
 
 <h2 align=center>Style Settings</h2>
 
