@@ -40,6 +40,7 @@
 - *Folder Note*
 - *MySnippets*
 - *Table Advanced*
+- *Fantasy Calendar*
 
 <h2 align=center>Instalation - Obsidian</h2>
 
