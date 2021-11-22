@@ -196,6 +196,10 @@ community:
     margin-top: 30px;
 }
 
+.markdown-preview-view hr {
+    border-color: var(--borgonia);
+}
+
 /*─────────────── <LaTeX> ───────────────*/
 .cm-s-obsidian span.cm-math, .cm-s-obsidian span.hmd-fold-math-placeholder {
     font-style: normal;
@@ -748,6 +752,16 @@ del, .cm-strikethrough {color: var(--text-faint);}
     background-color: var(--c-code-background);
 }
 
+.theme-dark .markdown-preview-view pre code {
+    color: white;
+    background: transparent;
+}
+
+.theme-light .markdown-preview-view pre code {
+    color: black;
+    background: transparent;
+}
+
 /*────────── <Tables> ──────────*/
 table {
     border-style: solid;
@@ -1053,6 +1067,7 @@ ul ul::before, ul ol::before, ol ul::before, ol ol:before {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 45em;
 }
 
 .mermaid g.label {
