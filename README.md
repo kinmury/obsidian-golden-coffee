@@ -1,3 +1,9 @@
+<h2 align="center"><b><i> Important Notice </i></b></h2>
+
+I've got good news and bad news. The bad news is that this theme won't be maintained anymore. The good news are that, even though this theme won't be available on the *Community Theme* section, it will still be available here, on the GitHub repository for anyone to use and, probably the most important thing, is that this theme is updated and incorporated as an **Alternative Theme** on my newest theme [Ukiyo](https://github.com/kinmury/obsidian-ukiyo)
+
+<p align=center><i>Thanks to everyone that has used this theme, and I hope you like the newer version.<i></p>
+
 <h1 align=center>Golden Coffee</h1>
 
 <p align=center>Welcome to Golden Coffee. As of today, 2021/11/05, I just made the Rework of the theme. The main reason behind the rework is the fact that I have gain a little more experience of CSS, and know how to make the previews thinks look better.<br><br>Be aware that the changes may be very big between the previews Golden Coffee, and the actual <i>Golden Coffe</i>. So, if you liked the preview version more than the actual, <b>fear not</b>, because the preview version is saved and you can download it from the <ins>releases</ins>.<br><br><b><i>Hope you like and enjoy the Rework :D</i></b></p>
